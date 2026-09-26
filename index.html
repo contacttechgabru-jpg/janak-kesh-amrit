@@ -294,7 +294,83 @@
   .mbar b{font-family:'Fraunces',serif;font-size:19px;color:var(--green);font-variant-numeric:tabular-nums;}
   .mbar small{display:block;font-size:11px;color:var(--muted);}
   @media (max-width:760px){.mbar{display:flex;}body{padding-bottom:70px;}}
-html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%;}.gallery,.product-grid>*,.b3-grid>*,.res-grid>*,.contact-grid>*{min-width:0;}@media (max-width:600px){.sec{padding-block:44px;}.sec-head{margin-bottom:24px;}.product{padding-block:14px 34px;}.p-info h1{font-size:26px;}.ing-grid{grid-template-columns:1fr 1fr;gap:10px;}.ing{padding:14px 12px;gap:6px;}.ing h3{font-size:14.5px;}.ing p{font-size:12.5px;}.ing .hi{font-size:11.5px;}.ing-ic{width:38px;height:38px;}.steps{gap:10px;}.step{display:grid;grid-template-columns:38px 1fr;column-gap:12px;padding:16px;}.step .n{grid-row:span 2;font-size:26px;}.step h3{margin:0 0 4px;font-size:15.5px;}.step p{font-size:13.5px;}.use-photo{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}.b3{padding-block:40px;}.b3-stage{height:340px;}.contact-grid{gap:24px;}.bs-grid{padding-block:20px;}.dates div{padding:10px 12px;}}</style>
+html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%;}.gallery,.product-grid>*,.b3-grid>*,.res-grid>*,.contact-grid>*{min-width:0;}@media (max-width:600px){.sec{padding-block:44px;}.sec-head{margin-bottom:24px;}.product{padding-block:14px 34px;}.p-info h1{font-size:26px;}.ing-grid{grid-template-columns:1fr 1fr;gap:10px;}.ing{padding:14px 12px;gap:6px;}.ing h3{font-size:14.5px;}.ing p{font-size:12.5px;}.ing .hi{font-size:11.5px;}.ing-ic{width:38px;height:38px;}.steps{gap:10px;}.step{display:grid;grid-template-columns:38px 1fr;column-gap:12px;padding:16px;}.step .n{grid-row:span 2;font-size:26px;}.step h3{margin:0 0 4px;font-size:15.5px;}.step p{font-size:13.5px;}.use-photo{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}.b3{padding-block:40px;}.b3-stage{height:340px;}.contact-grid{gap:24px;}.bs-grid{padding-block:20px;}.dates div{padding:10px 12px;}}
+  /* results slider */
+  .res-grid .ba img{border-radius:0;box-shadow:none;}
+  .res-sec{background:linear-gradient(180deg,#eef2e8,#f7f4ea);}
+  .ba{position:relative;aspect-ratio:1/1.1;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#222;user-select:none;touch-action:pan-y;}
+  .ba-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none;}
+  .ba-before{position:absolute;inset:0;clip-path:inset(0 50% 0 0);}
+  .ba-tag{position:absolute;top:14px;background:var(--green);color:#f6f0e4;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border-radius:10px;}
+  .ba-tag.l{left:14px;} .ba-tag.r{right:14px;}
+  .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);pointer-events:none;}
+  .ba-handle span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;color:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);}
+  .ba-handle svg{width:24px;height:24px;}
+  .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;}
+  .res-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;}
+  .res-stats div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;}
+  .res-stats b{display:block;font-family:'Fraunces',serif;font-size:26px;color:var(--green);line-height:1.1;}
+  .res-stats span{font-size:12.5px;color:var(--muted);font-weight:700;}
+  /* process */
+  .process{background:#2a1a0e;color:#e8dcc4;padding-block:64px;}
+  .process-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+  @media (max-width:860px){.process-grid{grid-template-columns:1fr;gap:26px;}}
+  .process h2{color:#fbf5e8;font-size:clamp(26px,3.6vw,38px);margin-top:8px;}
+  .process .eyebrow{color:#e7c27c;}
+  .process-copy > p{margin-top:12px;color:#d9ccb3;font-size:15.5px;}
+  .process-grid img{border-radius:20px;box-shadow:0 30px 50px -30px rgba(0,0,0,.8);}
+  .p-promise{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:10px;}
+  .p-promise li{display:flex;flex-direction:column;border-left:3px solid #e7c27c;padding:4px 0 4px 14px;}
+  .p-promise b{color:#fbf5e8;font-size:16px;}
+  .p-promise span{font-size:13.5px;color:#cbbd9f;}
+  .p-steps{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px;counter-reset:p;}
+  .p-steps li{counter-increment:p;border:1px solid rgba(231,194,124,.35);background:rgba(255,255,255,.04);border-radius:14px;padding:14px 16px;}
+  .p-steps li::before{content:"0" counter(p);font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:#e7c27c;display:block;}
+  .p-steps b{display:block;color:#fbf5e8;font-size:16px;margin-top:2px;}
+  .p-steps span{font-size:13px;color:#cbbd9f;}
+  /* reviews form */
+  .rv-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start;margin-top:28px;}
+  @media (max-width:860px){.rv-wrap{grid-template-columns:1fr;gap:18px;}}
+  .rv-intro h3{font-family:'Fraunces',serif;font-weight:600;font-size:26px;}
+  .rv-intro p{color:var(--muted);margin-top:10px;}
+  .rv-intro ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:14px;}
+  .rv-intro li::before{content:"✓";color:var(--green-2);margin-right:8px;}
+  .stars-in{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px;margin-bottom:14px;}
+  .stars-in label{font-size:32px;line-height:1;color:#d8ccb4;cursor:pointer;}
+  .stars-in input{position:absolute;opacity:0;width:1px;height:1px;}
+  .stars-in label:has(input:checked),.stars-in label:has(input:checked) ~ label,.stars-in label:hover,.stars-in label:hover ~ label{color:var(--gold);}
+  .field input[type=file]{padding:9px;background:var(--panel);}
+  .rv-ok{margin-top:12px;background:var(--green-soft);color:var(--green);font-weight:700;border-radius:10px;padding:12px;text-align:center;}
+  @media (max-width:600px){.res-stats b{font-size:22px;}.p-steps{grid-template-columns:1fr 1fr;}.process{padding-block:44px;}.use-photo{grid-template-columns:1fr;}}
+.pz .p{width:100cqw;height:100cqw;position:relative;overflow:hidden;margin-bottom:2cqw;background:#f6f0e4}
+.pz .p.tex{background:radial-gradient(ellipse 90% 70% at 50% 40%,#fbf7ee 0%,#f3eadb 70%,#ebdfc8 100%)}
+.pz .brand{position:absolute;top:3cqw;left:0;right:0;text-align:center}
+.pz .brand img{width:7cqw;mix-blend-mode:multiply;display:block;margin:0 auto}
+.pz .brand .n{font:700 3cqw 'Fraunces',Georgia,serif;color:#22381c;margin-top:0.2cqw;letter-spacing:.01em}
+.pz .brand .t{display:flex;align-items:center;justify-content:center;gap:1.2cqw;font:800 1.3cqw 'Manrope',system-ui,sans-serif;letter-spacing:.24em;color:#6d4a26;margin-top:0.4cqw}
+.pz .brand .t:before,.pz .brand .t:after{content:"";width:4.6cqw;height:0.15cqw;background:#b8862f}
+.pz h1{font:700 6cqw/1.02 'Fraunces',Georgia,serif;color:#1f3318;text-align:center}
+.pz h1 em{font-style:normal;color:#9a6a26}
+.pz .pill{display:inline-block;background:#1f3318;color:#f6f0e4;font:800 2.2cqw 'Manrope',system-ui,sans-serif;letter-spacing:.06em;padding:1cqw 2.6cqw;border-radius:1.2cqw}
+.pz .icons{position:absolute;left:0;right:0;bottom:0;height:9.6cqw;display:flex;align-items:center;justify-content:center;gap:0;border-top:0.15cqw solid #e2d5bb;background:#f6f0e4}
+.pz .icons div{display:flex;align-items:center;gap:1.2cqw;font:700 2.1cqw 'Manrope',system-ui,sans-serif;color:#241c14;padding:0 2.6cqw}
+.pz .icons div+div{border-left:0.15cqw solid #cdbd9c}
+.pz .icons svg{width:4.4cqw;height:4.4cqw;color:#1f3318;border:0.2cqw solid #1f3318;border-radius:50%;padding:0.8cqw}
+.pz .fine{font:600 1.5cqw 'Manrope',system-ui,sans-serif;color:#7a6a55;text-align:center}
+.pz .bottle{filter:drop-shadow(0 2.6cqw 2.6cqw rgba(50,30,10,.4))}
+.pz .badge{position:absolute;width:17.6cqw;height:17.6cqw;border-radius:50%;background:#1f3318;color:#f6f0e4;border:0.5cqw solid #f6f0e4;box-shadow:0 1.2cqw 2.6cqw -1cqw rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.pz .badge b{font:700 4cqw/1 'Fraunces',Georgia,serif;color:#e7c27c}
+.pz .badge span{font:800 1.3cqw/1.25 'Manrope',system-ui,sans-serif;letter-spacing:.05em;margin-top:0.6cqw}
+.pz{container-type:inline-size;width:100%;aspect-ratio:1/1;overflow:hidden;position:relative;}
+.pz .p{margin:0!important;width:100cqw!important;height:100cqw!important;}
+.pz *{box-sizing:border-box;margin:0;padding:0;}
+.pz img{max-width:none;display:block;}
+
+  .slides > .pz{flex:0 0 100%;width:100%;scroll-snap-align:center;}
+  .thumbs .pz{pointer-events:none;}
+  .pz-round{border-radius:20px;box-shadow:0 30px 50px -30px rgba(0,0,0,.6);}
+  .use-photo .pz{border-radius:18px;}
+</style>
 </head>
 <body><form name="orders" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="order"><input name="payment_id"><input name="amount"><input name="product"><input name="name"><input name="phone"><input name="email"><input name="address"><input name="city_state"><input name="pincode"></form>
 
@@ -310,6 +386,7 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
     <nav class="links">
       <a href="#bottle">The Bottle</a>
       <a href="#ingredients">Ingredients</a>
+      <a href="#process">How it's made</a>
       <a href="#results">Results</a>
       <a href="#how">How to Use</a>
       <a href="#reviews">Reviews</a>
@@ -331,10 +408,39 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
           <img src="assets/benefits.jpg" alt="Key benefits: helps reduce hair fall, stronger roots, healthier scalp, less dandruff, thicker-looking hair, natural shine" loading="lazy">
           <img src="assets/how-to-use.jpg" alt="How to use in 5 steps: take oil in palm, massage into scalp, leave 1–2 hours, wash with mild shampoo, repeat for 3–4 weeks" loading="lazy">
           <img src="assets/ingredients.jpg" alt="8 natural ingredients: bhringraj, rosemary, methi, kalonji, flax seeds, coconut, mustard and castor oil" loading="lazy">
-          <img src="assets/benefits-2.jpg" alt="Janak Kesh Amrit 100 ml and 500 ml bottles with benefits list" loading="lazy">
+          <div class="pz" role="img" aria-label="Why Janak Kesh Amrit: no mineral oil, no preservatives, whole herbs and seeds, sun-heated and aged naturally"><div class="p tex">
+  <div class="brand"><img src="assets/logo.png" alt=""><div class="t">HAIR RECOVER OIL</div></div>
+  <h1 style="position:absolute;top:17cqw;left:0;right:0">Why <em>Janak Kesh Amrit?</em></h1>
+  <img class="bottle" src="assets/bottle.webp" alt="" style="position:absolute;left:4cqw;top:33cqw;height:56cqw">
+  <div style="position:absolute;left:30cqw;right:4cqw;top:29cqw;background:#fff;border:0.2cqw solid #e2d5bb;border-radius:2.4cqw;overflow:hidden">
+    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;background:#1f3318;color:#f6f0e4;font:800 1.7cqw 'Manrope',system-ui,sans-serif;letter-spacing:.04em">
+      <div style="padding:1.8cqw 2cqw"></div><div style="padding:1.8cqw 1cqw;text-align:center;background:#2c4a23">JANAK KESH<br>AMRIT</div><div style="padding:1.8cqw 1cqw;text-align:center">MANY REGULAR<br>HAIR OILS</div>
+    </div>
+    <div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;"><div style="padding:1.8cqw 2cqw">Mineral oil (liquid paraffin)</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><span style="font:800 1.8cqw 'Manrope',system-ui,sans-serif;color:#2f7a3b">None</span></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Often used</div></div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;background:#fbf8f1"><div style="padding:1.8cqw 2cqw">Added preservatives</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><span style="font:800 1.8cqw 'Manrope',system-ui,sans-serif;color:#2f7a3b">None</span></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Common</div></div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;"><div style="padding:1.8cqw 2cqw">Whole herbs &amp; seeds</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><circle cx="12" cy="12" r="11" fill="#2f7a3b"></circle><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Varies</div></div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;background:#fbf8f1"><div style="padding:1.8cqw 2cqw">Sun-heated &amp; aged naturally</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><circle cx="12" cy="12" r="11" fill="#2f7a3b"></circle><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Rarely</div></div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;"><div style="padding:1.8cqw 2cqw">3 traditional base oils</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><circle cx="12" cy="12" r="11" fill="#2f7a3b"></circle><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Varies</div></div><div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;align-items:center;border-top:0.15cqw solid #efe6d4;font:700 1.9cqw/1.25 'Manrope',system-ui,sans-serif;background:#fbf8f1"><div style="padding:1.8cqw 2cqw">Free shipping across India</div><div style="padding:1.4cqw;display:flex;justify-content:center;background:rgba(47,122,59,.07);height:100%;align-items:center"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><circle cx="12" cy="12" r="11" fill="#2f7a3b"></circle><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="padding:1.4cqw;text-align:center;font:600 1.6cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">Varies</div></div></div>
+  </div>
+  <p class="fine" style="position:absolute;left:30cqw;right:4cqw;top:92cqw">Comparison is general and does not refer to any particular brand.</p>
+</div></div>
           <img src="assets/model.jpg" alt="Woman with long hair holding a bottle of Janak Kesh Amrit" loading="lazy">
           <img src="assets/packs.jpg" alt="Pack sizes: 100 ml ₹499, 500 ml ₹2,199, 1 Litre ₹3,999, free shipping" loading="lazy">
-          <img src="assets/before-after.jpg" alt="Scalp before and after, 17 September and 22 December" loading="lazy">
+          <div class="pz" role="img" aria-label="Real customer result: scalp on 17 September and 22 December, after about 3 months of regular use"><div class="p">
+  <div style="position:absolute;top:3.6cqw;left:0;right:0;text-align:center">
+    <p style="font:800 1.7cqw 'Manrope',system-ui,sans-serif;letter-spacing:.26em;color:#9a6a26">JANAK KESH AMRIT · REAL CUSTOMER</p>
+    <h1 style="margin-top:1.2cqw">Mazboot Jad, <em>Behtar Baal</em></h1>
+  </div>
+  <div style="position:absolute;left:3.6cqw;top:19cqw;width:45.2cqw;height:56cqw;border-radius:2.2cqw;overflow:hidden;background-image:url(assets/before-after.jpg);background-size:251.57% 260.42%;background-position:15.77% 47.40%;background-repeat:no-repeat"></div>
+  <div style="position:absolute;right:3.6cqw;top:19cqw;width:45.2cqw;height:56cqw;border-radius:2.2cqw;overflow:hidden;background-image:url(assets/before-after.jpg);background-size:246.91% 260.42%;background-position:84.03% 47.40%;background-repeat:no-repeat"></div>
+  <span class="pill" style="position:absolute;left:3.6cqw;top:19cqw;border-radius:2.2cqw 0 1.6cqw 0">BEFORE · 17 SEPT</span>
+  <span class="pill" style="position:absolute;right:3.6cqw;top:19cqw;border-radius:0 2.2cqw 0 1.6cqw">AFTER · 22 DEC</span>
+  <img class="bottle" src="assets/bottle.webp" alt="" style="position:absolute;left:50%;transform:translateX(-50%);top:42cqw;height:42cqw">
+  <div class="badge" style="left:5.6cqw;top:69cqw"><b>3</b><span>MONTHS OF<br>REGULAR USE</span></div>
+  <div class="badge" style="right:5.6cqw;top:69cqw"><b>100%</b><span>NATURAL<br>INGREDIENTS</span></div>
+  <p class="fine" style="position:absolute;left:0;right:0;top:86cqw">Photos shared by one of our customers. Results vary from person to person.</p>
+  <div class="icons">
+    <div><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C9 8 8 5 9 3M12 10c3-2 4-5 3-7M8 21c0-3 1.5-5 4-5.5M16 21c0-3-1.5-5-4-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>Stronger Roots</div>
+    <div><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0012 0c0-4-3-7-6-11z" stroke="currentColor" stroke-width="1.8"></path></svg>Less Hair Fall</div>
+    <div><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V11M12 11c-4 0-7-3-7-7 4 0 7 3 7 7zM12 11c4 0 7-3 7-7-4 0-7 3-7 7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path></svg>Naturally Healthy Hair</div>
+  </div>
+</div></div>
         </div>
         <button class="g-arrow g-prev" type="button" id="gPrev" aria-label="Previous image"><svg viewBox="0 0 20 20" fill="none"><path d="M12.5 4.5L7 10l5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="g-arrow g-next" type="button" id="gNext" aria-label="Next image"><svg viewBox="0 0 20 20" fill="none"><path d="M7.5 4.5L13 10l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -344,10 +450,10 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
           <button type="button" aria-label="Benefits"><img src="assets/benefits.jpg" alt=""></button>
           <button type="button" aria-label="How to use"><img src="assets/how-to-use.jpg" alt=""></button>
           <button type="button" aria-label="Ingredients"><img src="assets/ingredients.jpg" alt=""></button>
-          <button type="button" aria-label="Image 5"><img src="assets/benefits-2.jpg" alt=""></button>
-          <button type="button" aria-label="Image 6"><img src="assets/model.jpg" alt=""></button>
+          <button type="button" aria-label="Why Janak Kesh Amrit"><span class="pz-slot"></span></button>
+          <button type="button" aria-label="Lifestyle"><img src="assets/model.jpg" alt=""></button>
           <button type="button" aria-label="Pack sizes"><img src="assets/packs.jpg" alt=""></button>
-          <button type="button" aria-label="Before and after"><img src="assets/before-after.jpg" alt=""></button>
+          <button type="button" aria-label="Real results"><span class="pz-slot"></span></button>
         </div>
       </div>
 
@@ -551,19 +657,52 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
   </section>
 
   <!-- RESULTS -->
-  <section class="sec sec-alt" id="results">
+  <section class="sec res-sec" id="results">
     <div class="wrap res-grid">
-      <img src="assets/before-after.jpg" alt="Scalp before and after, 17 September and 22 December">
+      <div class="ba" id="ba" role="group" aria-label="Before and after comparison. Drag to compare.">
+        <div class="ba-img" style="background-image:url(assets/before-after.jpg);background-size:246.91% 260.42%;background-position:84.03% 47.40%;background-repeat:no-repeat" role="img" aria-label="Scalp on 22 December"></div>
+        <div class="ba-before" id="baBefore"><div class="ba-img" style="background-image:url(assets/before-after.jpg);background-size:251.57% 260.42%;background-position:15.77% 47.40%;background-repeat:no-repeat" role="img" aria-label="Scalp on 17 September"></div></div>
+        <span class="ba-tag l">Before · 17 Sept</span><span class="ba-tag r">After · 22 Dec</span>
+        <div class="ba-handle" id="baHandle"><span><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Slide to compare before and after">
+      </div>
       <div class="res-copy">
         <p class="eyebrow">Real Results</p>
-        <h2>From 17 Sept to 22 Dec</h2>
-        <p>One of our customers photographed her parting before starting Janak Kesh Amrit and again about three months later.</p>
-        <div class="dates">
-          <div><b>17 Sept</b><span>Before</span></div>
-          <div><b>22 Dec</b><span>After</span></div>
+        <h2>Same parting, three months apart</h2>
+        <p>One of our customers photographed her parting before starting Janak Kesh Amrit, then again about three months later. Drag the slider to compare.</p>
+        <div class="res-stats">
+          <div><b>~3</b><span>months of regular champi</span></div>
+          <div><b>2–3×</b><span>a week, as directed</span></div>
+          <div><b>8</b><span>natural ingredients</span></div>
         </div>
-        <p class="fine">Results vary from person to person depending on hair type, routine and how regularly the oil is used.</p>
+        <p class="fine">Photos shared by a customer. Results vary from person to person depending on hair type, routine and how regularly the oil is used.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap process-grid">
+      <div class="process-copy">
+        <p class="eyebrow">How it's made</p>
+        <h2>Made slowly, the way Dadi Maa did</h2>
+        <p>No factory shortcuts. Whole herbs and seeds are steeped in three traditional oils, warmed under the sun and left to rest until the oil takes on their colour and aroma.</p>
+        <ul class="p-promise">
+          <li><b>Made in Jalandhar, Punjab</b><span>Made to a traditional Ayurvedic home recipe</span></li>
+          <li><b>Nothing added</b><span>No mineral oil, no preservatives, nothing artificial</span></li>
+          <li><b>Delivered free</b><span>Free shipping to every pincode we serve in India</span></li>
+        </ul>
+      </div>
+      <div class="pz pz-round" role="img" aria-label="Janak Kesh Amrit process: pick, infuse, sun-heat, age"><div class="p" style="background:#2a1a0e">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 50% 58%,rgba(231,194,124,.28),transparent 70%)"></div>
+  <div style="position:absolute;top:4.4cqw;left:0;right:0;text-align:center">
+    <p style="font:800 1.7cqw 'Manrope',system-ui,sans-serif;letter-spacing:.26em;color:#e7c27c">MADE THE DADI MAA WAY</p>
+    <h1 style="margin-top:1.2cqw;color:#fbf5e8">Slow-made. <em style="color:#e7c27c">Sun-heated.</em></h1>
+  </div>
+  <img class="bottle" src="assets/bottle.webp" alt="" style="position:absolute;left:50%;transform:translateX(-50%);top:30cqw;height:50cqw;filter:drop-shadow(0 3cqw 4cqw rgba(0,0,0,.6))">
+  <div><div style="position:absolute;left:5cqw;top:26cqw;width:27cqw;background:rgba(255,255,255,.06);border:0.15cqw solid rgba(231,194,124,.45);border-radius:2cqw;padding:2.2cqw"><div style="font:700 4.4cqw/1 'Fraunces',Georgia,serif;color:#e7c27c">01</div><div style="font:800 2.6cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8;margin-top:1cqw">Pick</div><div style="font:600 1.7cqw/1.4 'Manrope',system-ui,sans-serif;color:#d9ccb3;margin-top:0.6cqw">Bhringraj, rosemary, methi, kalonji &amp; flax</div></div><div style="position:absolute;left:68cqw;top:26cqw;width:27cqw;background:rgba(255,255,255,.06);border:0.15cqw solid rgba(231,194,124,.45);border-radius:2cqw;padding:2.2cqw"><div style="font:700 4.4cqw/1 'Fraunces',Georgia,serif;color:#e7c27c">02</div><div style="font:800 2.6cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8;margin-top:1cqw">Infuse</div><div style="font:600 1.7cqw/1.4 'Manrope',system-ui,sans-serif;color:#d9ccb3;margin-top:0.6cqw">Steeped in coconut, mustard &amp; castor oil</div></div><div style="position:absolute;left:5cqw;top:59cqw;width:27cqw;background:rgba(255,255,255,.06);border:0.15cqw solid rgba(231,194,124,.45);border-radius:2cqw;padding:2.2cqw"><div style="font:700 4.4cqw/1 'Fraunces',Georgia,serif;color:#e7c27c">03</div><div style="font:800 2.6cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8;margin-top:1cqw">Sun-heat</div><div style="font:600 1.7cqw/1.4 'Manrope',system-ui,sans-serif;color:#d9ccb3;margin-top:0.6cqw">Warmed slowly under the sun, the old way</div></div><div style="position:absolute;left:68cqw;top:59cqw;width:27cqw;background:rgba(255,255,255,.06);border:0.15cqw solid rgba(231,194,124,.45);border-radius:2cqw;padding:2.2cqw"><div style="font:700 4.4cqw/1 'Fraunces',Georgia,serif;color:#e7c27c">04</div><div style="font:800 2.6cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8;margin-top:1cqw">Age</div><div style="font:600 1.7cqw/1.4 'Manrope',system-ui,sans-serif;color:#d9ccb3;margin-top:0.6cqw">Rested naturally so the herbs fully release</div></div></div>
+  <p style="position:absolute;left:0;right:0;bottom:4.4cqw;text-align:center;font:700 1.9cqw 'Manrope',system-ui,sans-serif;color:#e8dcc4;letter-spacing:.04em">No mineral oil · No preservatives · Nothing artificial</p>
+</div></div>
     </div>
   </section>
 
@@ -583,8 +722,26 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
         <div class="step"><div class="n">5</div><h3>Repeat for 3–4 weeks</h3><p>Keep up the routine for at least 3–4 weeks to see the difference.</p></div>
       </div>
       <div class="use-photo">
-        <img src="assets/model.jpg" alt="Woman with long hair holding Janak Kesh Amrit">
-        <img src="assets/hero.jpg" alt="Oil being poured into a palm">
+        <div class="pz pz-round" role="img" aria-label="Weekly ritual: champi 2 to 3 times a week, evening massage, leave overnight, wash in the morning"><div class="p tex">
+  <div style="position:absolute;left:0;top:0;width:47cqw;height:100cqw;background-image:url(assets/hero.jpg);background-size:195.65% 150.00%;background-position:100.00% 100.00%;background-repeat:no-repeat"></div>
+  <div style="position:absolute;left:40cqw;top:0;width:7cqw;height:100cqw;background:linear-gradient(90deg,rgba(246,240,228,0),#f3eadb)"></div>
+  <div style="position:absolute;left:51cqw;right:4.4cqw;top:6cqw">
+    <p style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.24em;color:#9a6a26">YOUR WEEKLY RITUAL</p>
+    <h1 style="text-align:left;font-size:5.4cqw;margin-top:1cqw">Champi <em>2–3 times</em> a week</h1>
+    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:0.8cqw;margin-top:3.4cqw"><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">M</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#1f3318;color:#e7c27c"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0012 0c0-4-3-7-6-11z" fill="currentColor"></path></svg></div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">T</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#fff;border:0.15cqw solid #e2d5bb;color:#d0c4ad">·</div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">W</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#1f3318;color:#e7c27c"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0012 0c0-4-3-7-6-11z" fill="currentColor"></path></svg></div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">T</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#fff;border:0.15cqw solid #e2d5bb;color:#d0c4ad">·</div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">F</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#fff;border:0.15cqw solid #e2d5bb;color:#d0c4ad">·</div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">S</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#1f3318;color:#e7c27c"><svg viewBox="0 0 24 24" style="width:3cqw;height:3cqw"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0012 0c0-4-3-7-6-11z" fill="currentColor"></path></svg></div></div><div style="text-align:center"><div style="font:800 1.5cqw 'Manrope',system-ui,sans-serif;color:#8a7b66">S</div><div style="margin-top:0.8cqw;height:5.8cqw;border-radius:1.4cqw;display:flex;align-items:center;justify-content:center;background:#fff;border:0.15cqw solid #e2d5bb;color:#d0c4ad">·</div></div></div>
+    <div style="margin-top:4cqw;display:flex;flex-direction:column;gap:1.6cqw"><div style="display:flex;gap:1.8cqw;align-items:center;background:#fff;border:0.15cqw solid #e2d5bb;border-radius:1.8cqw;padding:1.6cqw 2cqw"><div style="width:5.2cqw;height:5.2cqw;border-radius:50%;background:#b8862f;color:#fff;font:700 2.4cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">1</div><div><div style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.12em;color:#9a6a26;text-transform:uppercase">Evening</div><div style="font:700 2.1cqw 'Manrope',system-ui,sans-serif;color:#1f3318;margin-top:0.2cqw">Warm 1–2 tsp oil in your palms</div></div></div><div style="display:flex;gap:1.8cqw;align-items:center;background:#fff;border:0.15cqw solid #e2d5bb;border-radius:1.8cqw;padding:1.6cqw 2cqw"><div style="width:5.2cqw;height:5.2cqw;border-radius:50%;background:#b8862f;color:#fff;font:700 2.4cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">2</div><div><div style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.12em;color:#9a6a26;text-transform:uppercase">5–10 min</div><div style="font:700 2.1cqw 'Manrope',system-ui,sans-serif;color:#1f3318;margin-top:0.2cqw">Massage roots with fingertips</div></div></div><div style="display:flex;gap:1.8cqw;align-items:center;background:#fff;border:0.15cqw solid #e2d5bb;border-radius:1.8cqw;padding:1.6cqw 2cqw"><div style="width:5.2cqw;height:5.2cqw;border-radius:50%;background:#b8862f;color:#fff;font:700 2.4cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">3</div><div><div style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.12em;color:#9a6a26;text-transform:uppercase">Overnight</div><div style="font:700 2.1cqw 'Manrope',system-ui,sans-serif;color:#1f3318;margin-top:0.2cqw">Or at least 1–2 hours</div></div></div><div style="display:flex;gap:1.8cqw;align-items:center;background:#fff;border:0.15cqw solid #e2d5bb;border-radius:1.8cqw;padding:1.6cqw 2cqw"><div style="width:5.2cqw;height:5.2cqw;border-radius:50%;background:#b8862f;color:#fff;font:700 2.4cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">4</div><div><div style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.12em;color:#9a6a26;text-transform:uppercase">Morning</div><div style="font:700 2.1cqw 'Manrope',system-ui,sans-serif;color:#1f3318;margin-top:0.2cqw">Wash with a mild shampoo</div></div></div></div>
+  </div>
+  <div style="position:absolute;left:3.6cqw;bottom:4cqw;background:#1f3318;color:#f6f0e4;border-radius:1.6cqw;padding:1.4cqw 2cqw;font:800 1.8cqw 'Manrope',system-ui,sans-serif">Keep it up for at least 3–4 weeks</div>
+</div></div>
+        <div class="pz pz-round" role="img" aria-label="6 tips for better results: warm it slightly, use fingertips, focus on roots, leave overnight, mild shampoo, stay regular"><div class="p" style="background:#1f3318">
+  <div style="position:absolute;right:0;top:0;width:43cqw;height:100cqw;background-image:url(assets/model.jpg);background-size:200.00% 133.33%;background-position:75.00% 100.00%;background-repeat:no-repeat"></div>
+  <div style="position:absolute;right:36cqw;top:0;width:9cqw;height:100cqw;background:linear-gradient(90deg,#1f3318,rgba(31,51,24,0))"></div>
+  <div style="position:absolute;left:5cqw;top:6cqw;width:54cqw">
+    <p style="font:800 1.6cqw 'Manrope',system-ui,sans-serif;letter-spacing:.24em;color:#e7c27c">GET THE MOST FROM EVERY DROP</p>
+    <h1 style="text-align:left;color:#fbf5e8;font-size:6.4cqw;margin-top:1.2cqw">6 tips for <em style="color:#e7c27c">better results</em></h1>
+    <div style="margin-top:4.4cqw;display:flex;flex-direction:column;gap:3cqw"><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">1</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Warm it slightly</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">Warm oil spreads easily and feels soothing</div></div></div><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">2</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Use fingertips, not nails</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">Gentle circles protect the scalp</div></div></div><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">3</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Focus on the roots</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">That's where nourishment matters most</div></div></div><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">4</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Leave it overnight</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">Give the herbs time to work</div></div></div><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">5</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Wash with mild shampoo</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">Avoid harsh, hot-water washes</div></div></div><div style="display:flex;gap:1.6cqw;align-items:flex-start"><div style="width:5.2cqw;height:5.2cqw;border-radius:1.4cqw;background:#e7c27c;color:#1f3318;font:700 2.2cqw 'Fraunces',Georgia,serif;display:flex;align-items:center;justify-content:center;flex:none">6</div><div><div style="font:800 2.7cqw 'Manrope',system-ui,sans-serif;color:#fbf5e8">Stay regular</div><div style="font:600 1.9cqw 'Manrope',system-ui,sans-serif;color:#c9d3bf;margin-top:0.4cqw">2–3 times a week, every week</div></div></div></div>
+  </div>
+</div></div>
       </div>
     </div>
   </section>
@@ -597,6 +754,34 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
         <h2>What our customers say</h2>
       </div>
       <div id="reviewsMount"></div>
+      <div class="rv-wrap">
+        <div class="rv-intro">
+          <h3>Used Janak Kesh Amrit?</h3>
+          <p>Tell other buyers how it worked for you. Every review is from a real customer and is checked before it appears here.</p>
+          <ul>
+            <li>Takes less than a minute</li>
+            <li>Add a before/after photo if you like</li>
+            <li>We only show your first name and city</li>
+          </ul>
+        </div>
+        <form class="card-form rv-form" id="rvForm" name="reviews" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" novalidate>
+          <input type="hidden" name="form-name" value="reviews">
+          <p hidden><label>Leave empty <input name="bot-field"></label></p>
+          <p class="opt-label" style="margin-top:0">Your rating</p>
+          <div class="stars-in" id="starsIn" role="radiogroup" aria-label="Rating">
+            <label><input type="radio" name="rating" value="5" aria-label="5 stars" checked>★</label><label><input type="radio" name="rating" value="4" aria-label="4 stars">★</label><label><input type="radio" name="rating" value="3" aria-label="3 stars">★</label><label><input type="radio" name="rating" value="2" aria-label="2 stars">★</label><label><input type="radio" name="rating" value="1" aria-label="1 star">★</label>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="rvName">First name</label><input id="rvName" name="name" type="text" autocomplete="given-name" required></div>
+            <div class="field"><label for="rvCity">City</label><input id="rvCity" name="city" type="text" autocomplete="address-level2"></div>
+          </div>
+          <div class="field"><label for="rvText">Your review</label><textarea id="rvText" name="review" placeholder="How did your hair and scalp feel after a few weeks?" required></textarea></div>
+          <div class="field"><label for="rvPhoto">Photo (optional)</label><input id="rvPhoto" name="photo" type="file" accept="image/*"></div>
+          <p class="co-err" id="rvErr" role="alert"></p>
+          <button type="submit" class="btn btn-green" style="width:100%">Submit review</button>
+          <p class="rv-ok" id="rvOk" hidden>Thank you! We'll publish your review after a quick check.</p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -963,6 +1148,12 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
 
   document.querySelectorAll(".wa-display").forEach(function(el){ el.textContent = WHATSAPP_DISPLAY; });
 
+
+  /* poster thumbnails: clone the matching gallery slide */
+  (function(){
+    var ts = document.querySelectorAll("#thumbs button"), ss = document.querySelectorAll("#slides > *");
+    ts.forEach(function(b, i){ var slot = b.querySelector(".pz-slot"); if (slot && ss[i]) { var c = ss[i].cloneNode(true); c.removeAttribute("role"); c.removeAttribute("aria-label"); c.setAttribute("aria-hidden","true"); slot.replaceWith(c); } });
+  })();
   /* ---- gallery ---- */
   var slides = $("slides");
   var thumbs = Array.prototype.slice.call(document.querySelectorAll("#thumbs button"));
@@ -1021,11 +1212,7 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
   /* ---- reviews ---- */
   (function(){
     var mount = $("reviewsMount");
-    if (!REVIEWS.length) {
-      mount.innerHTML = '<div class="rev-empty"><h3>Tried Janak Kesh Amrit?</h3><p>We’re a new brand and would love to hear how it worked for you. Send us your review, or your before and after photos, on WhatsApp.</p><a class="btn btn-wa" target="_blank" rel="noopener" id="revLink">Share your review</a></div>';
-      $("revLink").href = waLink("Hi! I'd like to share my review of Janak Kesh Amrit:");
-      return;
-    }
+    if (!REVIEWS.length) { mount.hidden = true; return; }
     var grid = document.createElement("div");
     grid.className = "rev-grid";
     REVIEWS.forEach(function(r){
@@ -1183,6 +1370,28 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
     $("coForm").reset();
     closeCheckout();
   });
+
+  /* ---- before/after slider ---- */
+  (function(){
+    var r = $("baRange"); if (!r) return;
+    function set(v){ $("baBefore").style.clipPath = "inset(0 " + (100 - v) + "% 0 0)"; $("baHandle").style.left = v + "%"; }
+    r.addEventListener("input", function(){ set(this.value); }); set(50);
+  })();
+
+  /* ---- review form -> Netlify Forms ---- */
+  (function(){
+    var f = $("rvForm"); if (!f) return;
+    f.addEventListener("submit", function(e){
+      e.preventDefault();
+      var err = $("rvErr");
+      if ($("rvName").value.trim().length < 2 || $("rvText").value.trim().length < 10) { err.textContent = "Please add your first name and a few words about your experience."; err.classList.add("show"); return; }
+      err.classList.remove("show");
+      var btn = f.querySelector("button[type=submit]"); btn.disabled = true; btn.textContent = "Sending…";
+      fetch("/", { method: "POST", body: new FormData(f) })
+        .then(function(res){ if (!res.ok) throw new Error(); f.querySelectorAll(".field,.row2,.stars-in,.opt-label,button[type=submit]").forEach(function(el){ el.hidden = true; }); $("rvOk").hidden = false; })
+        .catch(function(){ btn.disabled = false; btn.textContent = "Submit review"; err.textContent = "Couldn't send right now. Please try again, or send it to us on WhatsApp."; err.classList.add("show"); });
+    });
+  })();
 })();
 </script>
 
