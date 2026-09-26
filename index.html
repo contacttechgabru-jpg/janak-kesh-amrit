@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janak Kesh Amrit · Ayurvedic Hair Recover Oil</title>
+<meta name="description" content="Janak Kesh Amrit Ayurvedic hair oil with bhringraj, rosemary, methi, kalonji and flax in coconut, mustard and castor oil. No mineral oil, no preservatives. Free shipping across India.">
+<link rel="icon" href="assets/logo.png">
+<meta property="og:title" content="Janak Kesh Amrit · Ayurvedic Hair Recover Oil">
+<meta property="og:description" content="Wahi Dadi Maa wali champi. 100% natural, free shipping across India.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="preconnect" href="https://checkout.razorpay.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    --bg:#fbf8f1;
+    --bg-alt:#f2ead8;
+    --panel:#ffffff;
+    --green:#22381c;
+    --green-2:#34522b;
+    --green-soft:#e6ecdf;
+    --gold:#b8862f;
+    --gold-soft:#f3e5c4;
+    --brown:#3a2415;
+    --ink:#241c14;
+    --muted:#6d6153;
+    --line:#e7ddc8;
+    --danger:#a63c2e;
+    --wa:#25d366;
+    --shadow:0 20px 44px -24px rgba(36,28,20,.38);
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:'Manrope',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{margin:0;color:var(--green);line-height:1.15;text-wrap:balance;}
+  h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:600;}
+  h3,h4{font-family:'Manrope',system-ui,sans-serif;font-weight:800;}
+  p{margin:0;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  button{font-family:inherit;}
+  :focus-visible{outline:2.5px solid var(--gold);outline-offset:2px;}
+  .wrap{max-width:1180px;margin-inline:auto;padding-inline:20px;}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);}
+  .sec{padding-block:64px;}
+  .sec-alt{background:var(--bg-alt);}
+  .sec-head{max-width:640px;margin:0 auto 36px;text-align:center;}
+  .sec-head h2{font-size:clamp(26px,3.6vw,36px);margin-top:8px;}
+  .sec-head p{color:var(--muted);margin-top:10px;font-size:15.5px;}
+
+  /* announcement */
+  .announce{background:var(--green);color:#f4efe2;text-align:center;font-size:13px;font-weight:700;padding-block:9px;padding-inline:16px;letter-spacing:.02em;}
+
+  /* header */
+  header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(251,248,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:11px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .brand img{width:40px;height:40px;object-fit:contain;mix-blend-mode:multiply;}
+  .brand b{font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--green);display:block;line-height:1.1;}
+  .brand small{font-size:9.5px;font-weight:800;letter-spacing:.24em;color:var(--gold);}
+  nav.links{display:flex;gap:24px;font-size:14px;font-weight:700;}
+  nav.links a{text-decoration:none;opacity:.8;}
+  nav.links a:hover{opacity:1;}
+  @media (max-width:880px){nav.links{display:none;}}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:12px;font-weight:800;cursor:pointer;text-decoration:none;font-size:15px;padding:14px 22px;}
+  .btn-green{background:var(--green);color:#f7f2e6;}
+  .btn-green:hover{background:var(--green-2);}
+  .btn-gold{background:var(--gold);color:#fff;}
+  .btn-gold:hover{filter:brightness(.95);}
+  .btn-sm{padding:10px 18px;font-size:14px;border-radius:999px;}
+  .btn-wa{background:var(--wa);color:#08301a;}
+  .btn-wa:hover{filter:brightness(.96);}
+  .btn-ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);}
+
+  /* product hero */
+  .product{padding-block:36px 56px;}
+  .product-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:start;}
+  @media (max-width:900px){.product-grid{grid-template-columns:1fr;gap:28px;}}
+
+  .gallery{position:relative;}
+  .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;background:var(--panel);box-shadow:var(--shadow);scrollbar-width:none;}
+  .slides::-webkit-scrollbar{display:none;}
+  .slides img{flex:0 0 100%;width:100%;aspect-ratio:1/1;object-fit:cover;scroll-snap-align:center;}
+  .g-arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,255,255,.92);box-shadow:0 6px 16px -6px rgba(0,0,0,.35);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--green);}
+  .g-arrow svg{width:18px;height:18px;}
+  .g-prev{left:12px;}
+  .g-next{right:12px;}
+  .thumbs{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:12px;}
+  @media (max-width:560px){.thumbs{display:flex;overflow-x:auto;scrollbar-width:none;}.thumbs button{flex:0 0 58px;}}
+  .g-count{position:absolute;top:12px;left:12px;background:rgba(34,56,28,.86);color:#f7f2e6;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums;}
+  /* product details accordion (Shopify style) */
+  .pd{margin-top:22px;border-top:1px solid var(--line);}
+  .pd details{border-bottom:1px solid var(--line);}
+  .pd summary{list-style:none;cursor:pointer;padding:15px 2px;font-weight:800;font-size:15px;display:flex;align-items:center;gap:12px;}
+  .pd summary::-webkit-details-marker{display:none;}
+  .pd summary .pi{width:34px;height:34px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;flex:none;}
+  .pd summary .pi svg{width:18px;height:18px;}
+  .pd summary .chev{margin-left:auto;width:18px;height:18px;color:var(--muted);transition:transform .18s;}
+  .pd details[open] summary .chev{transform:rotate(180deg);}
+  .pd .body{padding:0 2px 18px 46px;font-size:14.5px;color:var(--muted);}
+  .pd ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px;}
+  .pd ul b{color:var(--ink);}
+  .pd ol{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:10px;}
+  .pd ol li{counter-increment:s;display:flex;gap:10px;align-items:flex-start;}
+  .pd ol li::before{content:counter(s);width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;font-weight:800;font-size:12.5px;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;}
+  .pd .tip{margin-top:12px;background:var(--gold-soft);color:var(--brown);border-radius:10px;padding:10px 12px;font-size:13.5px;}
+  .pay-logos{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+  .pay-logos span{font-size:11px;font-weight:800;border:1px solid var(--line);border-radius:6px;padding:3px 7px;color:var(--ink);background:var(--bg);}
+  /* success */
+  .ok-ic{width:64px;height:64px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;margin:8px auto 14px;}
+  .ok-ic svg{width:32px;height:32px;}
+  .co-err{display:none;background:#f8e3de;color:var(--danger);border-radius:10px;padding:10px 12px;font-size:13.5px;font-weight:700;margin-bottom:12px;}
+  .co-err.show{display:block;}
+  .btn[disabled]{opacity:.6;cursor:wait;}
+  .thumbs button{padding:0;border:2px solid transparent;border-radius:12px;overflow:hidden;cursor:pointer;background:var(--panel);}
+  .thumbs button.active{border-color:var(--green);}
+  .thumbs img{aspect-ratio:1/1;object-fit:cover;width:100%;}
+
+  .p-info h1{font-size:clamp(27px,3.4vw,36px);margin-top:8px;}
+  .p-tag{color:var(--muted);font-size:15px;margin-top:10px;}
+  .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:20px;}
+  .price-now{font-family:'Fraunces',serif;font-weight:700;font-size:34px;color:var(--green);font-variant-numeric:tabular-nums;}
+  .ship-pill{background:var(--green-soft);color:var(--green);font-weight:800;font-size:12.5px;padding:5px 11px;border-radius:999px;}
+  .tax{font-size:12.5px;color:var(--muted);margin-top:4px;}
+  .opt-label{font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 10px;color:var(--ink);}
+  .sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .size{border:1.5px solid var(--line);background:var(--panel);border-radius:14px;padding:12px 10px;text-align:center;cursor:pointer;position:relative;transition:border-color .15s,background .15s;}
+  .size b{display:block;font-size:15.5px;color:var(--ink);}
+  .size span{display:block;font-size:14px;font-weight:700;color:var(--green);margin-top:2px;font-variant-numeric:tabular-nums;}
+  .size small{display:block;font-size:11px;color:var(--muted);margin-top:1px;}
+  .size.active{border-color:var(--green);background:var(--green-soft);}
+  .size .flag{position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap;}
+  .buy-row{display:flex;gap:12px;margin-top:22px;align-items:stretch;}
+  .stepper{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:var(--panel);}
+  .stepper button{width:40px;height:100%;min-height:48px;border:none;background:none;font-size:18px;font-weight:700;cursor:pointer;color:var(--ink);}
+  .stepper output{min-width:26px;text-align:center;font-weight:800;font-variant-numeric:tabular-nums;}
+  .buy-row .btn{flex:1;}
+  .highlights{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;}
+  .highlights li{display:flex;gap:8px;align-items:center;font-size:13.5px;font-weight:700;}
+  .highlights svg{width:18px;height:18px;flex:none;color:var(--green-2);}
+  .pay-note{display:flex;gap:10px;align-items:center;margin-top:20px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px;font-size:12.5px;color:var(--muted);background:var(--panel);}
+  .pay-note svg{width:20px;height:20px;flex:none;color:var(--green);}
+
+  /* benefits strip */
+  .benefit-strip{background:var(--green);color:#f3eee1;}
+  .bs-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;padding-block:28px;}
+  @media (max-width:900px){.bs-grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:480px){.bs-grid{grid-template-columns:repeat(2,1fr);}}
+  .bs-item{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-size:13px;font-weight:700;}
+  .bs-item svg{width:28px;height:28px;color:var(--gold-soft);}
+
+  /* 3D bottle */
+  .b3{background:radial-gradient(ellipse 70% 80% at 28% 50%,#3c5e31 0%,#1d3117 55%,#142210 100%);color:#efe8d6;padding-block:64px 56px;overflow:hidden;}
+  .b3 h2{color:#fbf6ea;font-size:clamp(28px,4vw,42px);margin-top:8px;}
+  .b3 .eyebrow{color:#e0bd72;}
+  .b3-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;}
+  @media (max-width:900px){.b3-grid{grid-template-columns:1fr;gap:12px;}}
+  .b3-stage{position:relative;height:clamp(400px,52vw,580px);}
+  .b3-stage canvas{display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab;}
+  .b3-stage.grabbing canvas{cursor:grabbing;}
+  .b3-hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#efe8d6;font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:999px;pointer-events:none;transition:opacity .4s;white-space:nowrap;}
+  .b3-hint svg{width:16px;height:16px;}
+  .b3-copy > p{color:#cfd8c6;margin-top:12px;font-size:15.5px;max-width:46ch;}
+  .b3-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;}
+  .b3-chips button{border:1.5px solid rgba(255,255,255,.22);background:transparent;color:#efe8d6;border-radius:999px;padding:9px 16px;font-weight:700;font-size:13.5px;cursor:pointer;}
+  .b3-chips button:hover{background:rgba(255,255,255,.08);}
+  .b3-chips button.active{background:#e0bd72;border-color:#e0bd72;color:#23180c;}
+  .b3-cap{margin-top:18px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px 18px;min-height:112px;}
+  .b3-cap h3{color:#fbf6ea;font-size:16px;margin-bottom:6px;}
+  .b3-cap p{color:#cfd8c6;font-size:14px;}
+  .b3-specs{display:flex;gap:0;margin-top:18px;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;flex-wrap:wrap;row-gap:12px;}
+  .b3-specs div{padding-right:20px;margin-right:20px;border-right:1px solid rgba(255,255,255,.14);}
+  .b3-specs div:last-child{border-right:none;margin-right:0;padding-right:0;}
+  .b3-specs span{display:block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#a9b69c;}
+  .b3-specs b{font-size:16px;color:#fbf6ea;font-variant-numeric:tabular-nums;}
+  .b3-flat{margin-top:40px;}
+  .b3-flat p{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#a9b69c;margin-bottom:10px;}
+  .label-scroll{overflow-x:auto;border-radius:14px;box-shadow:0 24px 50px -28px rgba(0,0,0,.7);}
+  .label-scroll img{width:100%;min-width:780px;max-width:none;display:block;}
+
+  /* ingredients */
+  .ing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:900px){.ing-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:440px){.ing-grid{grid-template-columns:1fr;}}
+  .ing{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px 18px;display:flex;flex-direction:column;gap:8px;}
+  .ing-ic{width:46px;height:46px;border-radius:50%;background:var(--green-soft);display:flex;align-items:center;justify-content:center;color:var(--green);}
+  .ing-ic svg{width:24px;height:24px;}
+  .ing h3{font-size:16px;color:var(--ink);}
+  .ing .hi{font-size:12.5px;font-weight:700;color:var(--gold);margin-top:-4px;}
+  .ing p{font-size:13.5px;color:var(--muted);}
+  .ing-type{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--green-2);background:var(--green-soft);align-self:flex-start;padding:3px 8px;border-radius:6px;}
+
+  /* results */
+  .res-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+  @media (max-width:860px){.res-grid{grid-template-columns:1fr;}}
+  .res-grid img{border-radius:20px;box-shadow:var(--shadow);}
+  .res-copy h2{font-size:clamp(25px,3.4vw,34px);margin-top:8px;}
+  .res-copy p{color:var(--muted);margin-top:12px;font-size:15px;}
+  .dates{display:flex;gap:14px;margin-top:22px;}
+  .dates div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px;}
+  .dates b{display:block;font-family:'Fraunces',serif;font-size:22px;color:var(--green);}
+  .dates span{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);}
+  .fine{font-size:12px;color:var(--muted);margin-top:16px;}
+
+  /* how to use */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+  @media (max-width:1000px){.steps{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:640px){.steps{grid-template-columns:1fr;}}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;}
+  .step .n{font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--gold);line-height:1;}
+  .step h3{font-size:16.5px;margin:12px 0 6px;color:var(--ink);}
+  .step p{font-size:14px;color:var(--muted);}
+  .use-photo{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media (max-width:640px){.use-photo{grid-template-columns:1fr;}}
+  .use-photo img{border-radius:18px;aspect-ratio:1/1;object-fit:cover;width:100%;}
+
+  /* reviews */
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media (max-width:860px){.rev-grid{grid-template-columns:1fr;}}
+  .rev{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px;}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:15px;}
+  .rev p{font-size:14.5px;}
+  .rev .who{font-size:13px;font-weight:800;color:var(--green);}
+  .rev-empty{max-width:560px;margin-inline:auto;text-align:center;background:var(--panel);border:1px dashed var(--line);border-radius:18px;padding:28px 22px;}
+  .rev-empty h3{font-size:18px;margin-bottom:8px;}
+  .rev-empty p{color:var(--muted);font-size:14.5px;margin-bottom:18px;}
+
+  /* faq */
+  .faq{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:10px;}
+  .faq details{background:var(--panel);border:1px solid var(--line);border-radius:14px;}
+  .faq summary{list-style:none;cursor:pointer;padding:17px 20px;font-weight:700;font-size:15px;display:flex;justify-content:space-between;gap:12px;align-items:center;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary svg{width:18px;height:18px;flex:none;color:var(--green);transition:transform .18s;}
+  .faq details[open] summary svg{transform:rotate(45deg);}
+  .faq details p{padding:0 20px 18px;color:var(--muted);font-size:14.5px;}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;}
+  @media (max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-copy h2{font-size:clamp(25px,3.4vw,34px);margin-top:8px;}
+  .contact-copy p{color:var(--muted);margin-top:12px;}
+  .contact-copy .num{margin-top:18px;font-weight:800;font-size:15px;}
+  .card-form{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);}
+
+  /* fields */
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px;}
+  .field input,.field textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:12px 13px;font-size:15px;font-family:inherit;background:var(--bg);color:var(--ink);}
+  .field textarea{min-height:96px;resize:vertical;}
+  .field .err{display:none;color:var(--danger);font-size:12px;font-weight:700;margin-top:5px;}
+  .field.invalid input{border-color:var(--danger);}
+  .field.invalid .err{display:block;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media (max-width:420px){.row2{grid-template-columns:1fr;}}
+
+  /* footer */
+  footer{background:var(--brown);color:#eadfce;padding-block:44px 26px;}
+  .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px;}
+  @media (max-width:900px) and (min-width:721px){.f-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:720px){.f-grid{grid-template-columns:1fr;gap:24px;}}
+  .f-brand{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:10px;}
+  footer p{font-size:13.5px;color:#cdbca2;max-width:38ch;}
+  footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px;}
+  footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:13.5px;}
+  footer ul a{text-decoration:none;opacity:.9;}
+  .f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12px;color:#a8977c;display:flex;flex-direction:column;gap:10px;}
+
+  /* checkout drawer */
+  .backdrop{position:fixed;inset:0;background:rgba(24,18,12,.55);z-index:80;}
+  .drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--bg);z-index:90;overflow-y:auto;box-shadow:-20px 0 40px -20px rgba(0,0,0,.4);
+    padding:calc(18px + env(safe-area-inset-top,0px)) 20px calc(28px + env(safe-area-inset-bottom,0px));animation:slideIn .22s ease-out;}
+  @keyframes slideIn{from{transform:translateX(24px);opacity:.4;}to{transform:none;opacity:1;}}
+  @media (prefers-reduced-motion:reduce){.drawer{animation:none;}}
+  .d-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+  .d-head h3{font-size:19px;}
+  .x{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);background:var(--panel);cursor:pointer;font-size:18px;line-height:1;color:var(--ink);}
+  .summary{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:18px;}
+  .summary .l{display:flex;justify-content:space-between;font-size:14px;padding-block:4px;font-variant-numeric:tabular-nums;}
+  .summary .l.t{border-top:1px solid var(--line);margin-top:6px;padding-top:10px;font-weight:800;font-size:17px;}
+  .summary .l.t b{color:var(--green);}
+  .paystep{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px;}
+  .paystep .k{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);}
+  .paystep h4{font-size:16px;margin:6px 0 8px;color:var(--ink);}
+  .paystep p{font-size:13.5px;color:var(--muted);margin-bottom:12px;}
+  .amount-box{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--gold-soft);border-radius:12px;padding:12px 14px;margin-bottom:12px;}
+  .amount-box b{font-family:'Fraunces',serif;font-size:28px;color:var(--brown);font-variant-numeric:tabular-nums;}
+  .amount-box button{border:none;background:var(--brown);color:#fff;border-radius:8px;padding:8px 12px;font-weight:800;font-size:12.5px;cursor:pointer;}
+  .paystep .btn{width:100%;}
+  .ref{font-size:12.5px;color:var(--muted);text-align:center;margin-top:6px;}
+
+  /* mobile bar */
+  .mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--panel);border-top:1px solid var(--line);display:none;align-items:center;justify-content:space-between;gap:12px;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 24px -16px rgba(0,0,0,.3);}
+  .mbar b{font-family:'Fraunces',serif;font-size:19px;color:var(--green);font-variant-numeric:tabular-nums;}
+  .mbar small{display:block;font-size:11px;color:var(--muted);}
+  @media (max-width:760px){.mbar{display:flex;}body{padding-bottom:70px;}}
+</style>
+</head>
+<body>
+
+
+<div class="announce">Free shipping across India on every order</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="">
+      <span><b>Janak Kesh Amrit</b><small>HAIR OIL</small></span>
+    </a>
+    <nav class="links">
+      <a href="#bottle">The Bottle</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#results">Results</a>
+      <a href="#how">How to Use</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-green btn-sm" type="button" data-open-checkout>Buy Now</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- PRODUCT -->
+  <section class="product">
+    <div class="wrap product-grid">
+      <div class="gallery">
+        <div class="slides" id="slides" aria-label="Product images">
+          <img src="assets/hero.jpg" alt="Woman pouring Janak Kesh Amrit oil into her palm, with 100ml and 500ml bottles">
+          <img src="assets/benefits.jpg" alt="Key benefits: helps reduce hair fall, stronger roots, healthier scalp, less dandruff, thicker-looking hair, natural shine" loading="lazy">
+          <img src="assets/how-to-use.jpg" alt="How to use in 5 steps: take oil in palm, massage into scalp, leave 1–2 hours, wash with mild shampoo, repeat for 3–4 weeks" loading="lazy">
+          <img src="assets/ingredients.jpg" alt="8 natural ingredients: bhringraj, rosemary, methi, kalonji, flax seeds, coconut, mustard and castor oil" loading="lazy">
+          <img src="assets/benefits-2.jpg" alt="Janak Kesh Amrit 100 ml and 500 ml bottles with benefits list" loading="lazy">
+          <img src="assets/model.jpg" alt="Woman with long hair holding a bottle of Janak Kesh Amrit" loading="lazy">
+          <img src="assets/packs.jpg" alt="Pack sizes: 100 ml ₹499, 500 ml ₹2,199, 1 Litre ₹3,999, free shipping" loading="lazy">
+          <img src="assets/before-after.jpg" alt="Scalp before and after, 17 September and 22 December" loading="lazy">
+        </div>
+        <button class="g-arrow g-prev" type="button" id="gPrev" aria-label="Previous image"><svg viewBox="0 0 20 20" fill="none"><path d="M12.5 4.5L7 10l5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="g-arrow g-next" type="button" id="gNext" aria-label="Next image"><svg viewBox="0 0 20 20" fill="none"><path d="M7.5 4.5L13 10l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <span class="g-count" id="gCount">1 / 8</span>
+        <div class="thumbs" id="thumbs">
+          <button type="button" class="active" aria-label="Image 1"><img src="assets/hero.jpg" alt=""></button>
+          <button type="button" aria-label="Benefits"><img src="assets/benefits.jpg" alt=""></button>
+          <button type="button" aria-label="How to use"><img src="assets/how-to-use.jpg" alt=""></button>
+          <button type="button" aria-label="Ingredients"><img src="assets/ingredients.jpg" alt=""></button>
+          <button type="button" aria-label="Image 5"><img src="assets/benefits-2.jpg" alt=""></button>
+          <button type="button" aria-label="Image 6"><img src="assets/model.jpg" alt=""></button>
+          <button type="button" aria-label="Pack sizes"><img src="assets/packs.jpg" alt=""></button>
+          <button type="button" aria-label="Before and after"><img src="assets/before-after.jpg" alt=""></button>
+        </div>
+      </div>
+
+      <div class="p-info">
+        <p class="eyebrow">Ayurvedic Home Remedy · 100% Natural</p>
+        <h1>Janak Kesh Amrit Hair Recover Oil</h1>
+        <p class="p-tag">Wahi Dadi Maa wali champi, jis champi par bharosa tha. Bhringraj, rosemary, methi, flax and kalonji in coconut, mustard and castor oil, sun-heated and aged naturally.</p>
+
+        <div class="price-row">
+          <span class="price-now" id="priceNow">₹499</span>
+          <span class="ship-pill">Free Shipping</span>
+        </div>
+        <p class="tax">Inclusive of all taxes</p>
+
+        <p class="opt-label">Choose size</p>
+        <div class="sizes" id="sizes">
+          <button type="button" class="size active" data-size="100 ml" data-price="499"><b>100 ml</b><span>₹499</span><small>₹4.99/ml</small></button>
+          <button type="button" class="size" data-size="500 ml" data-price="2199"><em class="flag" style="font-style:normal">Save 12%</em><b>500 ml</b><span>₹2,199</span><small>₹4.40/ml</small></button>
+          <button type="button" class="size" data-size="1 Litre" data-price="3999"><em class="flag" style="font-style:normal">Save 20%</em><b>1 Litre</b><span>₹3,999</span><small>₹4.00/ml</small></button>
+        </div>
+
+        <p class="opt-label">Quantity</p>
+        <div class="buy-row">
+          <div class="stepper">
+            <button type="button" id="qMinus" aria-label="Decrease quantity">−</button>
+            <output id="qVal">1</output>
+            <button type="button" id="qPlus" aria-label="Increase quantity">+</button>
+          </div>
+          <button type="button" class="btn btn-green" data-open-checkout>Buy Now · <span id="buyTotal">₹499</span></button>
+        </div>
+
+        <ul class="highlights">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>No mineral oil</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>No preservatives</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>100% natural</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sun-heated, aged naturally</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ayurvedic home recipe</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free pan-India shipping</li>
+        </ul>
+
+        <div class="pay-note">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <div><span>100% secure payment by Razorpay. We never see your card or UPI details.</span>
+            <div class="pay-logos"><span>UPI</span><span>GPay</span><span>PhonePe</span><span>Paytm</span><span>Cards</span><span>Net Banking</span></div></div>
+        </div>
+
+        <div class="pd">
+          <details open>
+            <summary><span class="pi"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>Key benefits<svg class="chev" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="body"><ul>
+              <li><b>Helps reduce hair fall:</b> nourishes the roots so less hair ends up on your comb.</li>
+              <li><b>Stronger roots:</b> bhringraj and kalonji, trusted in Ayurveda for generations.</li>
+              <li><b>Healthier scalp:</b> warm mustard oil soothes a dry, tight scalp.</li>
+              <li><b>Less dandruff:</b> methi helps calm flakes and itchiness.</li>
+              <li><b>Thicker-looking hair:</b> rosemary and castor oil for fuller-looking strands.</li>
+              <li><b>Natural shine:</b> soft, smooth hair without silicones or mineral oil.</li>
+            </ul></div>
+          </details>
+          <details>
+            <summary><span class="pi"><svg viewBox="0 0 24 24" fill="none"><path d="M7 11V6a1.5 1.5 0 013 0v4m0-1V4.5a1.5 1.5 0 013 0V10m0-4a1.5 1.5 0 013 0v5m0-2a1.5 1.5 0 013 0v4c0 3.5-2.5 6-6 6h-1.5c-2 0-3.3-.8-4.5-2.2L4 15.3a1.5 1.5 0 012.2-2L7 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>How to use<svg class="chev" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="body"><ol>
+              <li><span><b>Take oil in your palm.</b> About 1–2 teaspoons, warmed between your hands.</span></li>
+              <li><span><b>Massage into the scalp.</b> Part your hair and apply to the roots with slow, circular strokes.</span></li>
+              <li><span><b>Leave it on 1–2 hours</b>, or overnight for better results.</span></li>
+              <li><span><b>Wash with a mild shampoo.</b></span></li>
+              <li><span><b>Repeat 2–3 times a week for 3–4 weeks</b> to see the difference.</span></li>
+            </ol>
+            <p class="tip">Do a patch test behind your ear 24 hours before first use. For external use only.</p></div>
+          </details>
+          <details>
+            <summary><span class="pi"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V11M12 11c-4 0-7-3-7-7 4 0 7 3 7 7zM12 11c4 0 7-3 7-7-4 0-7 3-7 7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>Ingredients<svg class="chev" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="body"><p>Coconut oil, mustard oil, castor oil, methi (fenugreek) seeds, flax seeds, bhringraj, rosemary and kalonji seeds. Sun-heated and aged naturally. No mineral oil, no preservatives.</p></div>
+          </details>
+          <details>
+            <summary><span class="pi"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17.5" r="1.8" stroke="currentColor" stroke-width="1.6"/></svg></span>Shipping &amp; payment<svg class="chev" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <div class="body"><ul>
+              <li>Free shipping on every order, anywhere in India.</li>
+              <li>Orders are dispatched within 1–2 working days and usually arrive in 3–7 working days.</li>
+              <li>Prepaid only, through Razorpay: UPI, cards, net banking and wallets.</li>
+              <li>See our <a href="shipping.html">shipping</a> and <a href="refund.html">refund</a> policies.</li>
+            </ul></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS STRIP -->
+  <div class="benefit-strip">
+    <div class="wrap bs-grid">
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-3 4-6 7-6 11a6 6 0 0012 0c0-4-3-7-6-11z" stroke="currentColor" stroke-width="1.6"/></svg>Hair Fall Control</div>
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C9 8 8 5 9 3M12 10c3-2 4-5 3-7M8 21c0-3 1.5-5 4-5.5M16 21c0-3-1.5-5-4-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Stronger Roots</div>
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v10M8 13h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Healthier Scalp</div>
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Reduced Dandruff</div>
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><path d="M6 21c0-7 2-11 2-17M12 21c0-8 1-12 1-17M18 21c0-7-2-11-2-17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Thicker-Looking Hair</div>
+      <div class="bs-item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Natural Shine</div>
+    </div>
+  </div>
+
+  <!-- 3D BOTTLE -->
+  <section class="b3" id="bottle">
+    <div class="wrap b3-grid">
+      <div class="b3-stage" id="b3Stage">
+        <canvas id="b3Canvas" role="img" aria-label="3D view of the Janak Kesh Amrit bottle. Drag sideways to turn it."></canvas>
+        <div class="b3-hint" id="b3Hint"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12l3-3M4 12l3 3M20 12l-3-3M20 12l-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Drag to turn the bottle</div>
+      </div>
+      <div class="b3-copy">
+        <p class="eyebrow">The Bottle</p>
+        <h2>Turn it around. Read every side.</h2>
+        <p>Our label wraps all the way around the bottle. Spin it to see the benefits, the ingredients and the five-step routine, or jump straight to a side.</p>
+        <div class="b3-chips" id="b3Chips">
+          <button type="button" class="active" data-u="0.43" data-t="Janak Kesh Amrit · Hair Recover Oil" data-d="An Ayurvedic home remedy. A traditional blend, sun-heated and aged naturally, with no preservatives.">Front</button>
+          <button type="button" data-u="0.685" data-t="Key ingredients" data-d="Coconut, mustard and castor oil, with methi seeds, flax seeds, bhringraj, rosemary and kalonji seeds.">Ingredients</button>
+          <button type="button" data-u="0.9" data-t="How to use" data-d="Take the oil in your palm, apply gently on the scalp, wait 1–2 hours or overnight, wash with shampoo, and repeat for 3–4 weeks.">How to use</button>
+          <button type="button" data-u="0.08" data-t="Natural care for stronger hair" data-d="Helps reduce hair fall, for stronger roots, a healthy scalp, thicker and fuller-looking hair and natural shine. 100% natural.">Benefits</button>
+        </div>
+        <div class="b3-cap" aria-live="polite">
+          <h3 id="b3CapT">Janak Kesh Amrit · Hair Recover Oil</h3>
+          <p id="b3CapD">An Ayurvedic home remedy. A traditional blend, sun-heated and aged naturally, with no preservatives.</p>
+        </div>
+        <div class="b3-specs">
+          <div><span>Net vol.</span><b>100 ml</b></div>
+          <div><span>M.R.P.</span><b>₹499</b></div>
+          <div><span>Made in</span><b>Jalandhar, Punjab</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap b3-flat">
+      <p>The full label</p>
+      <div class="label-scroll"><img id="labelImg" src="assets/label.jpg" alt="Full Janak Kesh Amrit label: benefits, brand, key ingredients, how to use, and product details"></div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS -->
+  <section class="sec" id="ingredients">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">What's Inside</p>
+        <h2>8 ingredients, all from the Indian kitchen and garden</h2>
+        <p>Five herbs and seeds in three traditional base oils, sun-heated and aged naturally. No mineral oil and no preservatives.</p>
+      </div>
+      <div class="ing-grid">
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V11M12 11c-4 0-7-3-7-7 4 0 7 3 7 7zM12 11c4 0 7-3 7-7-4 0-7 3-7 7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <span class="ing-type">Herb</span>
+          <h3>Bhringraj</h3>
+          <p class="hi">"Keshraj", the king of hair</p>
+          <p>Ayurveda's best-known herb for hair. Traditionally used against hair fall and to nourish the scalp.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21V4M12 8l-4-3M12 8l4-3M12 12l-5-3M12 12l5-3M12 16l-4-3M12 16l4-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <span class="ing-type">Herb</span>
+          <h3>Rosemary</h3>
+          <p class="hi">The scalp-massage favourite</p>
+          <p>Widely used in hair oils for its warming feel during champi and its link to thicker-looking hair.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="15" cy="8" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="11" cy="15" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="15" r="2" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <span class="ing-type">Seed</span>
+          <h3>Methi (Fenugreek)</h3>
+          <p class="hi">Protein-rich seed</p>
+          <p>A kitchen staple long used in home hair masks to condition strands and calm a flaky scalp.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 10l2-3 2 3-2 3zM13 8l2-3 2 3-2 3zM10 16l2-3 2 3-2 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <span class="ing-type">Seed</span>
+          <h3>Kalonji (Nigella)</h3>
+          <p class="hi">The black seed</p>
+          <p>A traditional remedy for strengthening hair at the root and nourishing a dry scalp.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><ellipse cx="8" cy="9" rx="2" ry="3.2" transform="rotate(-30 8 9)" stroke="currentColor" stroke-width="1.6"/><ellipse cx="15.5" cy="8" rx="2" ry="3.2" transform="rotate(25 15.5 8)" stroke="currentColor" stroke-width="1.6"/><ellipse cx="11.5" cy="16" rx="2" ry="3.2" transform="rotate(-10 11.5 16)" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <span class="ing-type">Seed</span>
+          <h3>Flax Seeds</h3>
+          <p class="hi">Alsi</p>
+          <p>Rich in natural omega fats. Used in home hair care to soften strands and help control frizz.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="13" rx="7" ry="7.5" stroke="currentColor" stroke-width="1.6"/><path d="M9 9.5h.01M12 9h.01M15 9.5h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+          <span class="ing-type">Base oil</span>
+          <h3>Coconut Oil</h3>
+          <p class="hi">Nariyal tel</p>
+          <p>Soaks into the hair shaft to help reduce breakage and keep strands soft.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-3 4.5-6 8-6 11.5a6 6 0 0012 0C18 11 15 7.5 12 3z" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 15a2.5 2.5 0 002.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <span class="ing-type">Base oil</span>
+          <h3>Mustard Oil</h3>
+          <p class="hi">Sarson tel</p>
+          <p>The warm, traditional base of North Indian champi. Nourishes a dry, tight scalp.</p>
+        </div>
+        <div class="ing">
+          <div class="ing-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6M10 3v4l-4 5v7a2 2 0 002 2h8a2 2 0 002-2v-7l-4-5V3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <span class="ing-type">Base oil</span>
+          <h3>Castor Oil</h3>
+          <p class="hi">Arandi tel</p>
+          <p>Thick and rich. Traditionally used to condition the roots and add natural shine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="sec sec-alt" id="results">
+    <div class="wrap res-grid">
+      <img src="assets/before-after.jpg" alt="Scalp before and after, 17 September and 22 December">
+      <div class="res-copy">
+        <p class="eyebrow">Real Results</p>
+        <h2>From 17 Sept to 22 Dec</h2>
+        <p>One of our customers photographed her parting before starting Janak Kesh Amrit and again about three months later.</p>
+        <div class="dates">
+          <div><b>17 Sept</b><span>Before</span></div>
+          <div><b>22 Dec</b><span>After</span></div>
+        </div>
+        <p class="fine">Results vary from person to person depending on hair type, routine and how regularly the oil is used.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO USE -->
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Mazboot Jad, Behtar Baal</p>
+        <h2>How to use</h2>
+        <p>The same champi your Dadi Maa gave you, in five steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><h3>Take oil in your palm</h3><p>Pour a little oil into your palm and rub your hands together to warm it.</p></div>
+        <div class="step"><div class="n">2</div><h3>Apply gently on the scalp</h3><p>Part your hair and massage the oil into the roots with slow, circular fingertip strokes.</p></div>
+        <div class="step"><div class="n">3</div><h3>Wait 1–2 hours</h3><p>Leave it on for 1–2 hours, or overnight for better results.</p></div>
+        <div class="step"><div class="n">4</div><h3>Wash with shampoo</h3><p>Gently wash it out with your regular mild shampoo.</p></div>
+        <div class="step"><div class="n">5</div><h3>Repeat for 3–4 weeks</h3><p>Keep up the routine for at least 3–4 weeks to see the difference.</p></div>
+      </div>
+      <div class="use-photo">
+        <img src="assets/model.jpg" alt="Woman with long hair holding Janak Kesh Amrit">
+        <img src="assets/hero.jpg" alt="Oil being poured into a palm">
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec sec-alt" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Reviews</p>
+        <h2>What our customers say</h2>
+      </div>
+      <div id="reviewsMount"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details><summary>What is in Janak Kesh Amrit?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>Coconut oil, mustard oil and castor oil, with methi (fenugreek) seeds, flax seeds, bhringraj, rosemary and kalonji seeds. It's sun-heated and aged naturally, with no mineral oil and no preservatives.</p></details>
+        <details><summary>How long should I leave it on?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>Leave it on for 1–2 hours, or overnight for better results, then wash with a mild shampoo. Keep up the routine for at least 3–4 weeks.</p></details>
+        <details><summary>Can men use it?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>Yes. It's the same traditional champi oil for everyone.</p></details>
+        <details><summary>Is shipping really free?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>Yes. Every order ships free anywhere in India, with no minimum order value.</p></details>
+        <details><summary>How do I pay? Is Cash on Delivery available?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>We take prepaid orders only, through Razorpay: UPI (GPay, PhonePe, Paytm), cards, net banking and wallets. Tap Buy Now, fill in your address and pay. Your order is confirmed instantly, no screenshots needed.</p></details>
+        <details><summary>I have a sensitive scalp. Is it safe?<svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p>All the ingredients are natural, but natural oils can still irritate some skin. Mustard oil in particular can feel warm. Do a patch test behind your ear 24 hours before first use.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec sec-alt" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact</p>
+        <h2>Questions? Talk to us on WhatsApp.</h2>
+        <p>Ask about your order, which size to pick, or how to use the oil. Type your message here and it opens in WhatsApp, ready to send.</p>
+        <p class="num">WhatsApp: <span class="wa-display"></span></p>
+      </div>
+      <form class="card-form" id="contactForm" novalidate>
+        <div class="field"><label for="ctName">Your name</label><input id="ctName" type="text" autocomplete="name"></div>
+        <div class="field"><label for="ctMsg">Message</label><textarea id="ctMsg" placeholder="Hi, I wanted to ask about…"></textarea></div>
+        <a class="btn btn-wa" id="ctSend" href="#" target="_blank" rel="noopener" style="width:100%">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.3-.6-2.3-1.4-3-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+          Send on WhatsApp
+        </a>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand">Janak Kesh Amrit</div>
+        <p>Ayurvedic hair fall recovery oil, made to a traditional home recipe with no mineral oil and no chemicals. Free shipping across India.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#top">100 ml · ₹499</a></li>
+          <li><a href="#top">500 ml · ₹2,199</a></li>
+          <li><a href="#top">1 Litre · ₹3,999</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li>WhatsApp: <span class="wa-display"></span></li>
+          <li>Jalandhar, Punjab</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Refund &amp; Cancellation</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Janak Kesh Amrit. All rights reserved.</span>
+      <span>Janak Kesh Amrit is a cosmetic hair oil. It is not a medicine and is not intended to diagnose, treat or cure any disease. Results vary from person to person. For hair loss linked to a medical condition, please consult a doctor.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <div><b id="mbarPrice">₹499</b><small id="mbarSize">100 ml · Free shipping</small></div>
+  <button type="button" class="btn btn-green" data-open-checkout>Buy Now</button>
+</div>
+
+<!-- CHECKOUT DRAWER -->
+<div class="backdrop" id="backdrop" hidden></div>
+<aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="d-head">
+    <h3 id="dTitle">Checkout</h3>
+    <button type="button" class="x" id="dClose" aria-label="Close checkout">×</button>
+  </div>
+
+  <div class="summary">
+    <div class="l"><span id="sLine">Janak Kesh Amrit · 100 ml × 1</span><span id="sSub">₹499</span></div>
+    <div class="l"><span>Shipping</span><span>Free</span></div>
+    <div class="l t"><span>Total</span><b id="sTotal">₹499</b></div>
+  </div>
+
+  <form id="coForm" novalidate>
+    <div class="field" id="f-name"><label for="cName">Full name</label><input id="cName" type="text" autocomplete="name"><div class="err">Please enter your name.</div></div>
+    <div class="field" id="f-phone"><label for="cPhone">Mobile number (WhatsApp)</label><input id="cPhone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit number"><div class="err">Enter a valid 10-digit mobile number.</div></div>
+    <div class="field" id="f-addr"><label for="cAddr">Address</label><input id="cAddr" type="text" autocomplete="street-address" placeholder="House no., street, area"><div class="err">Please enter your address.</div></div>
+    <div class="row2">
+      <div class="field" id="f-city"><label for="cCity">City</label><input id="cCity" type="text" autocomplete="address-level2"><div class="err">Enter your city.</div></div>
+      <div class="field" id="f-state"><label for="cState">State</label><input id="cState" type="text" autocomplete="address-level1"><div class="err">Enter your state.</div></div>
+    </div>
+    <div class="field" id="f-pin"><label for="cPin">Pincode</label><input id="cPin" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="6 digits"><div class="err">Enter a valid 6-digit pincode.</div></div>
+    <div class="field" id="f-email"><label for="cEmail">Email (optional, for your receipt)</label><input id="cEmail" type="email" autocomplete="email"><div class="err">Enter a valid email or leave it blank.</div></div>
+    <div class="co-err" id="coErr" role="alert"></div>
+    <button type="submit" class="btn btn-green" id="payBtn" style="width:100%">Pay <span id="payBtnAmt">₹499</span> securely</button>
+    <p class="ref" style="margin-top:10px">UPI, cards, net banking and wallets, powered by Razorpay</p>
+  </form>
+
+  <div id="coDone" hidden>
+    <div class="paystep" style="text-align:center">
+      <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h4 style="font-size:20px">Payment successful. Thank you!</h4>
+      <p>Your order is confirmed and we'll ship it within 1–2 working days. We'll send tracking details on WhatsApp.</p>
+      <div class="summary" style="text-align:left;margin-bottom:12px">
+        <div class="l"><span>Order</span><b id="dOrder"></b></div>
+        <div class="l"><span>Payment ID</span><span id="dPay" style="font-size:12.5px"></span></div>
+        <div class="l"><span>Amount paid</span><b id="dAmt"></b></div>
+      </div>
+      <a class="btn btn-wa" id="waOrder" href="#" target="_blank" rel="noopener" style="width:100%">Message us on WhatsApp</a>
+    </div>
+    <button type="button" class="btn btn-ghost" id="doneClose" style="width:100%">Continue shopping</button>
+  </div>
+</aside>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- 3D bottle mockup ---------- */
+(function(){
+  "use strict";
+  var stage = document.getElementById("b3Stage");
+  var canvas = document.getElementById("b3Canvas");
+  var hint = document.getElementById("b3Hint");
+  var chips = Array.prototype.slice.call(document.querySelectorAll("#b3Chips button"));
+  var labelImg = document.getElementById("labelImg");
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var TAU = Math.PI * 2;
+
+  function fail(){
+    stage.hidden = true;
+    document.getElementById("b3Chips").hidden = true;
+  }
+  if (!window.THREE) { fail(); return; }
+
+  var renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+  } catch (e) { fail(); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 0.95;
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(28, 1, 0.1, 100);
+  camera.position.set(0, 0.8, 11);
+  camera.lookAt(0, 0, 0);
+
+  /* studio environment for glass reflections */
+  var envC = document.createElement("canvas");
+  envC.width = 1024; envC.height = 512;
+  var g = envC.getContext("2d");
+  var grd = g.createLinearGradient(0, 0, 0, 512);
+  grd.addColorStop(0, "#4a5a3f"); grd.addColorStop(0.5, "#1e2a19"); grd.addColorStop(1, "#0b100a");
+  g.fillStyle = grd; g.fillRect(0, 0, 1024, 512);
+  function softbox(x, y, w, h, a){
+    var lg = g.createLinearGradient(x, 0, x + w, 0);
+    lg.addColorStop(0, "rgba(255,244,222,0)");
+    lg.addColorStop(0.5, "rgba(255,244,222," + a + ")");
+    lg.addColorStop(1, "rgba(255,244,222,0)");
+    g.fillStyle = lg; g.fillRect(x, y, w, h);
+  }
+  softbox(150, 80, 170, 320, 1);
+  softbox(690, 110, 110, 280, 0.75);
+  softbox(420, 0, 260, 70, 0.6);
+  var envTex = new THREE.CanvasTexture(envC);
+  envTex.mapping = THREE.EquirectangularReflectionMapping;
+  envTex.encoding = THREE.sRGBEncoding;
+  var pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromEquirectangular(envTex).texture;
+
+  scene.add(new THREE.HemisphereLight(0xfff3dc, 0x1b2a16, 0.55));
+  var key = new THREE.DirectionalLight(0xfff0d6, 1.5); key.position.set(4, 6, 7); scene.add(key);
+  var rim = new THREE.DirectionalLight(0xe2b866, 1.3); rim.position.set(-6, 3, -4); scene.add(rim);
+
+  var group = new THREE.Group();
+  var spinner = new THREE.Group();
+  group.add(spinner);
+  scene.add(group);
+  var BASE_Y = -2.05;
+  group.position.y = BASE_Y;
+
+  function lathe(pts, seg){
+    return new THREE.LatheGeometry(pts.map(function(p){ return new THREE.Vector2(p[0], p[1]); }), seg || 96);
+  }
+
+  /* amber oil inside */
+  var liquid = new THREE.Mesh(
+    lathe([[0,0.05],[0.93,0.05],[0.95,0.12],[0.95,2.9],[0.82,3.0],[0,3.0]]),
+    new THREE.MeshStandardMaterial({ color: 0x5c2604, roughness: 0.2, metalness: 0.1, emissive: 0x1a0800, side: THREE.DoubleSide })
+  );
+  spinner.add(liquid);
+
+  /* amber glass, Boston-round profile */
+  var glass = new THREE.Mesh(
+    lathe([[0,0],[0.9,0],[0.98,0.03],[1,0.12],[1,2.75],[0.97,2.95],[0.86,3.12],[0.63,3.25],[0.45,3.32],[0.42,3.38],[0.42,3.6]]),
+    new THREE.MeshPhysicalMaterial({ color: 0x4a1f05, roughness: 0.05, metalness: 0, clearcoat: 1, clearcoatRoughness: 0.04,
+      transparent: true, opacity: 0.74, envMapIntensity: 1.5, side: THREE.DoubleSide, depthWrite: false })
+  );
+  spinner.add(glass);
+
+  /* wrap-around label: circumference / label aspect = label height, so it wraps exactly once */
+  var R = 1.012;
+  var H = (TAU * R) / (2048 / 768);
+  var labelTex = new THREE.Texture(labelImg);
+  labelTex.encoding = THREE.sRGBEncoding;
+  labelTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  function texReady(){ labelTex.needsUpdate = true; }
+  if (labelImg.complete && labelImg.naturalWidth) texReady(); else labelImg.addEventListener("load", texReady);
+  var label = new THREE.Mesh(
+    new THREE.CylinderGeometry(R, R, H, 160, 1, true),
+    new THREE.MeshStandardMaterial({ map: labelTex, roughness: 0.45, metalness: 0, envMapIntensity: 0.45 })
+  );
+  label.position.y = 0.12 + (2.75 - 0.12) / 2;
+  spinner.add(label);
+
+  /* wooden cap */
+  var woodC = document.createElement("canvas");
+  woodC.width = 512; woodC.height = 256;
+  var w = woodC.getContext("2d");
+  w.fillStyle = "#6e4527"; w.fillRect(0, 0, 512, 256);
+  for (var i = 0; i < 90; i++) {
+    var x = Math.random() * 512;
+    w.strokeStyle = Math.random() > 0.5 ? "rgba(40,22,10,0.35)" : "rgba(170,120,75,0.28)";
+    w.lineWidth = 1 + Math.random() * 3;
+    w.beginPath(); w.moveTo(x, 0);
+    for (var y = 0; y <= 256; y += 32) w.lineTo(x + Math.sin(y / 40 + i) * 4, y);
+    w.stroke();
+  }
+  var woodTex = new THREE.CanvasTexture(woodC);
+  woodTex.encoding = THREE.sRGBEncoding;
+  var cap = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.47, 0.5, 0.8, 72),
+    new THREE.MeshStandardMaterial({ map: woodTex, roughness: 0.55, metalness: 0 })
+  );
+  cap.position.y = 3.73;
+  spinner.add(cap);
+
+  /* soft contact shadow */
+  var shC = document.createElement("canvas");
+  shC.width = shC.height = 256;
+  var s = shC.getContext("2d");
+  var rg = s.createRadialGradient(128, 128, 10, 128, 128, 128);
+  rg.addColorStop(0, "rgba(0,0,0,0.6)"); rg.addColorStop(1, "rgba(0,0,0,0)");
+  s.fillStyle = rg; s.fillRect(0, 0, 256, 256);
+  var shadow = new THREE.Mesh(
+    new THREE.PlaneGeometry(3.6, 3.6),
+    new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shC), transparent: true, depthWrite: false })
+  );
+  shadow.rotation.x = -Math.PI / 2;
+  shadow.position.y = 0.005;
+  group.add(shadow);
+
+  /* sizing */
+  function size(){
+    var cw = stage.clientWidth, ch = stage.clientHeight;
+    if (!cw || !ch) return;
+    renderer.setSize(cw, ch, false);
+    camera.aspect = cw / ch;
+    camera.updateProjectionMatrix();
+    draw();
+  }
+  if (window.ResizeObserver) new ResizeObserver(size).observe(stage);
+  else window.addEventListener("resize", size);
+
+  /* rotation state: showing label fraction u at the front means rotation = -u * 2π */
+  var rot = -TAU * 0.43, target = null, vel = 0, dragging = false, lastX = 0, idleUntil = 0;
+  function now(){ return performance.now(); }
+  function shortest(to){ var d = ((to - rot) % TAU + TAU * 1.5) % TAU - TAU / 2; return rot + d; }
+
+  canvas.addEventListener("pointerdown", function(e){
+    dragging = true; lastX = e.clientX; vel = 0; target = null;
+    try { canvas.setPointerCapture(e.pointerId); } catch (err) {}
+    stage.classList.add("grabbing");
+    hint.style.opacity = "0";
+  });
+  canvas.addEventListener("pointermove", function(e){
+    if (!dragging) return;
+    var dx = e.clientX - lastX; lastX = e.clientX;
+    rot += dx * 0.012; vel = dx * 0.012;
+  });
+  function endDrag(){ if (!dragging) return; dragging = false; idleUntil = now() + 3500; stage.classList.remove("grabbing"); }
+  canvas.addEventListener("pointerup", endDrag);
+  canvas.addEventListener("pointercancel", endDrag);
+
+  chips.forEach(function(c){
+    c.addEventListener("click", function(){
+      chips.forEach(function(x){ x.classList.remove("active"); });
+      c.classList.add("active");
+      document.getElementById("b3CapT").textContent = c.getAttribute("data-t");
+      document.getElementById("b3CapD").textContent = c.getAttribute("data-d");
+      target = shortest(-TAU * parseFloat(c.getAttribute("data-u")));
+      vel = 0; idleUntil = now() + 6000;
+      hint.style.opacity = "0";
+    });
+  });
+
+  function draw(){
+    spinner.rotation.y = rot;
+    renderer.render(scene, camera);
+  }
+
+  var visible = true, raf = 0, t0 = now();
+  function tick(){
+    raf = 0;
+    if (!visible) return;
+    var t = now();
+    if (target !== null) {
+      var d = target - rot;
+      rot += d * (reduced ? 1 : 0.09);
+      if (Math.abs(d) < 0.002) { rot = target; target = null; }
+    } else if (!dragging) {
+      if (Math.abs(vel) > 0.0005) { rot += vel; vel *= 0.94; }
+      else if (!reduced && t > idleUntil) { rot += 0.0035; }
+    }
+    if (!reduced) group.position.y = BASE_Y + Math.sin((t - t0) / 900) * 0.04;
+    draw();
+    raf = requestAnimationFrame(tick);
+  }
+  if (window.IntersectionObserver) {
+    new IntersectionObserver(function(entries){
+      visible = entries[0].isIntersecting;
+      if (visible && !raf) raf = requestAnimationFrame(tick);
+    }).observe(stage);
+  }
+  size();
+  raf = requestAnimationFrame(tick);
+})();
+</script>
+<script>
+(function(){
+  "use strict";
+
+  /* ===== EDIT THESE ===== */
+  var SELLER_WHATSAPP = "916280838003";          // country code + number, digits only
+  var WHATSAPP_DISPLAY = "+91 62808 38003";      // how the number is shown on the page
+  /* Payments: Razorpay keys live in Netlify environment variables, never in this file. */
+  /* Real customer reviews, e.g. { name: "Priya S.", city: "Jaipur", rating: 5, text: "..." } */
+  var REVIEWS = [];
+  /* ====================== */
+
+  var $ = function(id){ return document.getElementById(id); };
+  var inr = function(n){ return "₹" + n.toLocaleString("en-IN"); };
+  var waLink = function(text){ return "https://wa.me/" + SELLER_WHATSAPP + "?text=" + encodeURIComponent(text); };
+
+  document.querySelectorAll(".wa-display").forEach(function(el){ el.textContent = WHATSAPP_DISPLAY; });
+
+  /* ---- gallery ---- */
+  var slides = $("slides");
+  var thumbs = Array.prototype.slice.call(document.querySelectorAll("#thumbs button"));
+  var current = 0;
+  function goTo(i){
+    current = (i + thumbs.length) % thumbs.length;
+    slides.scrollTo({ left: slides.clientWidth * current, behavior: "smooth" });
+    markThumb(current);
+  }
+  function markThumb(i){
+    thumbs.forEach(function(t, k){ t.classList.toggle("active", k === i); });
+    $("gCount").textContent = (i + 1) + " / " + thumbs.length;
+    var th = thumbs[i], row = $("thumbs");
+    if (row.scrollWidth > row.clientWidth) row.scrollTo({ left: th.offsetLeft - row.clientWidth / 2 + th.clientWidth / 2, behavior: "smooth" });
+  }
+  thumbs.forEach(function(t, i){ t.addEventListener("click", function(){ goTo(i); }); });
+  $("gPrev").addEventListener("click", function(){ goTo(current - 1); });
+  $("gNext").addEventListener("click", function(){ goTo(current + 1); });
+  var scrollTimer;
+  slides.addEventListener("scroll", function(){
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function(){
+      var i = Math.round(slides.scrollLeft / slides.clientWidth);
+      if (i !== current) { current = i; markThumb(i); }
+    }, 80);
+  });
+
+  /* ---- product state ---- */
+  var state = { size: "100 ml", price: 499, qty: 1 };
+  var sizeBtns = document.querySelectorAll("#sizes .size");
+  function render(){
+    var total = state.price * state.qty;
+    $("priceNow").textContent = inr(state.price);
+    $("buyTotal").textContent = inr(total);
+    $("qVal").textContent = state.qty;
+    $("mbarPrice").textContent = inr(total);
+    $("mbarSize").textContent = state.size + (state.qty > 1 ? " × " + state.qty : "") + " · Free shipping";
+    $("sLine").textContent = "Janak Kesh Amrit · " + state.size + " × " + state.qty;
+    $("sSub").textContent = inr(total);
+    $("sTotal").textContent = inr(total);
+    $("payBtnAmt").textContent = inr(total);
+  }
+  sizeBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      sizeBtns.forEach(function(x){ x.classList.remove("active"); });
+      b.classList.add("active");
+      state.size = b.getAttribute("data-size");
+      state.price = parseInt(b.getAttribute("data-price"), 10);
+      render();
+    });
+  });
+  $("qMinus").addEventListener("click", function(){ state.qty = Math.max(1, state.qty - 1); render(); });
+  $("qPlus").addEventListener("click", function(){ state.qty = Math.min(10, state.qty + 1); render(); });
+  render();
+
+  /* ---- reviews ---- */
+  (function(){
+    var mount = $("reviewsMount");
+    if (!REVIEWS.length) {
+      mount.innerHTML = '<div class="rev-empty"><h3>Tried Janak Kesh Amrit?</h3><p>We’re a new brand and would love to hear how it worked for you. Send us your review, or your before and after photos, on WhatsApp.</p><a class="btn btn-wa" target="_blank" rel="noopener" id="revLink">Share your review</a></div>';
+      $("revLink").href = waLink("Hi! I'd like to share my review of Janak Kesh Amrit:");
+      return;
+    }
+    var grid = document.createElement("div");
+    grid.className = "rev-grid";
+    REVIEWS.forEach(function(r){
+      var card = document.createElement("div");
+      card.className = "rev";
+      var stars = document.createElement("div");
+      stars.className = "stars";
+      var n = Math.max(1, Math.min(5, r.rating || 5));
+      stars.textContent = "★".repeat(n) + "☆".repeat(5 - n);
+      stars.setAttribute("aria-label", n + " out of 5 stars");
+      var p = document.createElement("p"); p.textContent = r.text;
+      var who = document.createElement("div"); who.className = "who"; who.textContent = r.name + (r.city ? ", " + r.city : "");
+      card.appendChild(stars); card.appendChild(p); card.appendChild(who);
+      grid.appendChild(card);
+    });
+    mount.appendChild(grid);
+  })();
+
+  /* ---- contact form -> WhatsApp link ---- */
+  function updateContact(){
+    var name = $("ctName").value.trim();
+    var msg = $("ctMsg").value.trim();
+    var text = (name ? "Hi, I'm " + name + ". " : "Hi! ") + (msg || "I have a question about Janak Kesh Amrit.");
+    $("ctSend").href = waLink(text);
+  }
+  $("ctName").addEventListener("input", updateContact);
+  $("ctMsg").addEventListener("input", updateContact);
+  $("contactForm").addEventListener("submit", function(e){ e.preventDefault(); });
+  updateContact();
+
+  /* ---- checkout drawer ---- */
+  var drawer = $("drawer"), backdrop = $("backdrop"), lastFocus = null;
+  function openCheckout(){
+    lastFocus = document.activeElement;
+    render();
+    drawer.hidden = false; backdrop.hidden = false;
+    document.body.style.overflow = "hidden";
+    setTimeout(function(){ ($("coDone").hidden ? $("cName") : $("doneClose")).focus(); }, 30);
+  }
+  function closeCheckout(){
+    drawer.hidden = true; backdrop.hidden = true;
+    document.body.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll("[data-open-checkout]").forEach(function(b){ b.addEventListener("click", openCheckout); });
+  $("dClose").addEventListener("click", closeCheckout);
+  backdrop.addEventListener("click", closeCheckout);
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !drawer.hidden) closeCheckout(); });
+
+  var fields = [
+    ["f-name", "cName", function(v){ return v.length > 1; }],
+    ["f-phone", "cPhone", function(v){ return /^[6-9]\d{9}$/.test(v.replace(/\D/g, "").slice(-10)) && v.replace(/\D/g, "").length >= 10; }],
+    ["f-addr", "cAddr", function(v){ return v.length > 5; }],
+    ["f-city", "cCity", function(v){ return v.length > 1; }],
+    ["f-state", "cState", function(v){ return v.length > 1; }],
+    ["f-pin", "cPin", function(v){ return /^[1-9]\d{5}$/.test(v); }]
+  ];
+  fields.forEach(function(f){
+    $(f[1]).addEventListener("input", function(){
+      if ($(f[0]).classList.contains("invalid") && f[2](this.value.trim())) $(f[0]).classList.remove("invalid");
+    });
+  });
+
+  function showErr(msg){ var e = $("coErr"); e.textContent = msg; e.classList.toggle("show", !!msg); }
+  function setBusy(on){
+    var b = $("payBtn"); b.disabled = on;
+    b.firstChild.textContent = on ? "Opening secure payment… " : "Pay ";
+  }
+  function loadRazorpay(){
+    return new Promise(function(resolve, reject){
+      if (window.Razorpay) return resolve();
+      var sc = document.createElement("script");
+      sc.src = "https://checkout.razorpay.com/v1/checkout.js";
+      sc.onload = function(){ resolve(); };
+      sc.onerror = function(){ reject(new Error("Could not load Razorpay. Check your internet and try again.")); };
+      document.head.appendChild(sc);
+    });
+  }
+  function postJSON(url, body){
+    return fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+      .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(d){
+        if (!r.ok) throw new Error(d.error || "Something went wrong. Please try again.");
+        return d;
+      }); });
+  }
+
+  $("coForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    showErr("");
+    var firstBad = null;
+    fields.forEach(function(f){
+      var ok = f[2]($(f[1]).value.trim());
+      $(f[0]).classList.toggle("invalid", !ok);
+      if (!ok && !firstBad) firstBad = $(f[1]);
+    });
+    var email = $("cEmail").value.trim();
+    var emailOk = !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    $("f-email").classList.toggle("invalid", !emailOk);
+    if (!emailOk && !firstBad) firstBad = $("cEmail");
+    if (firstBad) { firstBad.focus(); return; }
+
+    var v = function(id){ return $(id).value.trim(); };
+    var customer = {
+      name: v("cName"), phone: v("cPhone").replace(/\D/g, "").slice(-10), email: email,
+      address: v("cAddr"), city: v("cCity"), state: v("cState"), pincode: v("cPin")
+    };
+    var order = { size: state.size, qty: state.qty };
+    setBusy(true);
+
+    Promise.all([loadRazorpay(), postJSON("/.netlify/functions/create-order", { size: order.size, qty: order.qty, customer: customer })])
+      .then(function(res){
+        var o = res[1];
+        var rzp = new window.Razorpay({
+          key: o.key_id,
+          order_id: o.order_id,
+          amount: o.amount,
+          currency: "INR",
+          name: "Janak Kesh Amrit",
+          description: "Hair Recover Oil · " + order.size + " × " + order.qty,
+          image: location.origin + "/assets/logo.png",
+          prefill: { name: customer.name, contact: "+91" + customer.phone, email: customer.email || undefined },
+          notes: { receipt: o.receipt },
+          theme: { color: "#22381c" },
+          modal: { ondismiss: function(){ setBusy(false); showErr("Payment was cancelled. You can try again, nothing was charged."); } },
+          handler: function(resp){
+            postJSON("/.netlify/functions/verify-payment", resp)
+              .then(function(){ showDone(o, resp, customer, order); })
+              .catch(function(){
+                showDone(o, resp, customer, order);
+              });
+          }
+        });
+        rzp.on("payment.failed", function(r){
+          setBusy(false);
+          showErr("Payment failed: " + ((r && r.error && r.error.description) || "please try again") + ". If money was deducted, it will be refunded automatically by your bank.");
+        });
+        rzp.open();
+      })
+      .catch(function(err){ setBusy(false); showErr(err.message); });
+  });
+
+  function showDone(o, resp, c, order){
+    setBusy(false);
+    var amt = inr(o.amount / 100);
+    $("dOrder").textContent = o.receipt;
+    $("dPay").textContent = resp.razorpay_payment_id;
+    $("dAmt").textContent = amt;
+    $("waOrder").href = waLink("Hi! I just placed order " + o.receipt + " (Janak Kesh Amrit " + order.size + " x " + order.qty + ", " + amt + " paid, payment ID " + resp.razorpay_payment_id + "). Name: " + c.name + ", " + c.city + " " + c.pincode + ".");
+    $("coForm").hidden = true;
+    $("coDone").hidden = false;
+    $("doneClose").focus();
+  }
+  $("doneClose").addEventListener("click", function(){
+    $("coDone").hidden = true; $("coForm").hidden = false;
+    $("coForm").reset();
+    closeCheckout();
+  });
+})();
+</script>
+
+</body>
+</html>
