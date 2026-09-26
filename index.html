@@ -1446,7 +1446,7 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
     var order = { size: state.size, qty: state.qty };
     setBusy(true);
 
-    Promise.all([loadRazorpay(), postJSON("/.netlify/functions/create-order", { size: order.size, qty: order.qty, customer: customer })])
+    Promise.all([loadRazorpay(), postJSON("/api/create-order", { size: order.size, qty: order.qty, customer: customer })])
       .then(function(res){
         var o = res[1];
         var rzp = new window.Razorpay({
@@ -1462,7 +1462,7 @@ html,body{margin:0;padding:0;overflow-x:clip;}html{-webkit-text-size-adjust:100%
           theme: { color: "#22381c" },
           modal: { ondismiss: function(){ setBusy(false); showErr("Payment was cancelled. You can try again, nothing was charged."); } },
           handler: function(resp){
-            postJSON("/.netlify/functions/verify-payment", resp)
+            postJSON("/api/verify-payment", resp)
               .then(function(){ showDone(o, resp, customer, order); })
               .catch(function(){
                 showDone(o, resp, customer, order);
