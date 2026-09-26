@@ -42,6 +42,7 @@ exports.handler = async (event) => {
   }
 
   const amount = price * qty * 100; // paise
+  if (!Number.isInteger(amount) || amount < 100) return json(400, { error: "Amount must be at least ₹1." });
   const receipt = "JKA" + Date.now().toString(36).toUpperCase();
 
   // Razorpay allows max 15 notes of 256 chars each. These show up on the payment in your dashboard.
@@ -64,10 +65,14 @@ exports.handler = async (event) => {
     body: JSON.stringify({ amount, currency: "INR", receipt, notes }),
   });
   const order = await res.json().catch(() => ({}));
+  if (res.status === 401) {
+    console.error("Razorpay auth failed: check RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET");
+    return json(401, { error: "Payments are temporarily unavailable. Please contact us on WhatsApp." });
+  }
   if (!res.ok || !order.id) {
     console.error("Razorpay order error", res.status, order && order.error);
-    return json(502, { error: "Could not start the payment. Please try again in a moment." });
+    return json(500, { error: "Could not start the payment. Please try again in a moment." });
   }
 
-  return json(200, { order_id: order.id, amount: order.amount, receipt, key_id: keyId });
+  return json(200, { order_id: order.id, amount: order.amount, currency: order.currency, receipt, key_id: keyId });
 };
