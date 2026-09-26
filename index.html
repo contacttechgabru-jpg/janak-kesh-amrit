@@ -296,7 +296,7 @@
   @media (max-width:760px){.mbar{display:flex;}body{padding-bottom:70px;}}
 </style>
 </head>
-<body>
+<body><form name="orders" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="order"><input name="payment_id"><input name="amount"><input name="product"><input name="name"><input name="phone"><input name="email"><input name="address"><input name="city_state"><input name="pincode"></form>
 
 
 <div class="announce">Free shipping across India on every order</div>
@@ -719,13 +719,13 @@
     <div class="paystep" style="text-align:center">
       <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <h4 style="font-size:20px">Payment successful. Thank you!</h4>
-      <p>Your order is confirmed and we'll ship it within 1–2 working days. We'll send tracking details on WhatsApp.</p>
+      <p>Your order is confirmed and your details have reached us automatically. No need to send anything. We'll ship within 1–2 working days and send tracking on WhatsApp.</p>
       <div class="summary" style="text-align:left;margin-bottom:12px">
         <div class="l"><span>Order</span><b id="dOrder"></b></div>
         <div class="l"><span>Payment ID</span><span id="dPay" style="font-size:12.5px"></span></div>
         <div class="l"><span>Amount paid</span><b id="dAmt"></b></div>
       </div>
-      <a class="btn btn-wa" id="waOrder" href="#" target="_blank" rel="noopener" style="width:100%">Message us on WhatsApp</a>
+      <a class="btn btn-wa" id="waOrder" href="#" target="_blank" rel="noopener" style="width:100%">Have a question? WhatsApp us</a>
     </div>
     <button type="button" class="btn btn-ghost" id="doneClose" style="width:100%">Continue shopping</button>
   </div>
