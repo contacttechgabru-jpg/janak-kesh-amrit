@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://janakkeshamrit.com/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/benefits.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/ingredients.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/how-to-use.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/packs.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/model.jpg</image:loc></image:image>
+    <image:image><image:loc>https://janakkeshamrit.com/assets/label.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://janakkeshamrit.com/contact.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://janakkeshamrit.com/shipping.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://janakkeshamrit.com/refund.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://janakkeshamrit.com/terms.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://janakkeshamrit.com/privacy.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
